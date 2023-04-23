@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a first-year PhD student at the [Computer Science department of UC Riverside](https://www1.cs.ucr.edu/), where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/). I am mostly interested in the intersection of AI and Systems. I have been working on machine learning models' capacity and contiual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link).
+I'm a first-year PhD student at the [Computer Science department of UC Riverside](https://www1.cs.ucr.edu/), where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/). I am mostly interested in the intersection of AI and Systems. I have been working on machine learning models' capacity and continual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link).
 
 Prior to that, I did my BSc at the [Electrical Engineering department of Sharif University of Technology](https://www.ee.sharif.edu/en/).
 
