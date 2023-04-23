@@ -10,8 +10,13 @@ redirect_from:
 I'm a first-year PhD student at the [Computer Science department of UC Riverside](https://www1.cs.ucr.edu/), where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/). I am mostly interested in the intersection of AI and Systems. I have been working on machine learning models' capacity and contiual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link).
 
 Prior to that, I did my BSc at the [Electrical Engineering department of Sharif University of Technology](https://www.ee.sharif.edu/en/).
+
+I love doing interdisciplinary research and I'm open to any cool ideas. Let's collaborate!
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
+News!
+======
+April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)! 
 
 <!-- A data-driven personal website
 ======
