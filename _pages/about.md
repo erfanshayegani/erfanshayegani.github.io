@@ -25,9 +25,10 @@ I love doing interdisciplinary research and I'm open to any cool ideas. Let's co
 
 News!
 ======
+July 2023: I did my own first paper :D, [Plug and Pray: Exploiting off-the-shelf components of Multi-Modal Models](https://arxiv.org/abs/2307.14539), check it out! 
+
 April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)! 
 
-July 2023: I did my own first paper :D, [Plug and Pray: Exploiting off-the-shelf components of Multi-Modal Models](https://arxiv.org/abs/2307.14539), check it out! 
 
 <!-- A data-driven personal website
 ======
