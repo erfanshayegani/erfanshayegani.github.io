@@ -29,6 +29,7 @@ July 2023: I did my own first paper :D, [Plug and Pray: Exploiting off-the-shelf
 
 April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)! 
 
+<img src="sharif.svg" width="50" height="50">
 
 <!-- A data-driven personal website
 ======
