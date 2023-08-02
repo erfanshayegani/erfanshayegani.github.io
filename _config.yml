@@ -81,12 +81,12 @@ analytics:
 # Site Author
 author:
   name             : "Erfan Shayegani"
-  avatar           : "profile.jpg"
+  avatar           : "profile2.jpg"
   bio              : "1st year Computer Science PhD student @ UC Riverside"
   location         : "Riverside, California, USA"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=G9pIW1AAAAAJ&hl=en&oi=sra"
   email            : "sshay004@ucr.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
