@@ -36,7 +36,7 @@ News!
 
 Education
 ------
-<img src="images/ucr.png" width="25" height="25"> Ph.D. in Computer Science at University of California, Riverside (2022)
+<img src="images/ucr.png" width="25" height="25"> Ph.D. in Computer Science at University of California, Riverside (2022-)
 
 <img src="images/sharif.svg" width="25" height="25"> B.Sc. in Electrical Engineering at Sharif University of Technology (2017-2022)
 
