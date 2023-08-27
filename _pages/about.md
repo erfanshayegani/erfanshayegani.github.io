@@ -12,12 +12,13 @@ redirect_from:
 
 I'm a first-year PhD student at the Computer Science department of UC Riverside, where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/).
 
-I am mostly interested in the intersection of AI and Systems. I have been working on Machine Learning Models' capacity and continual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link). 
+I am mostly interested in the intersection of AI and Systems. The primary focus of my research lies at the crossroads of Natural Language Processing (NLP), Alignment, Security/Privacy, and Reliability of Large (Vision) Language Models (LLMs) as they are integrated into more intricate systems. I have a keen interest in investigating these systems from an adversarial perspective, aiming to break them in order to enhance their trustworthiness and safety; ultimately amplifying their capacity for scalability. 
 
 Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link).
 
-I love doing interdisciplinary research and I'm open to any cool ideas. Let's collaborate!
+I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. I'm ready for collaboration :smile:
 
+<!-- I am mostly interested in the intersection of AI and Systems. I have been working on Machine Learning Models' capacity and continual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link).  -->
 
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
