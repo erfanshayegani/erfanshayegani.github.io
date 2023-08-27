@@ -16,7 +16,7 @@ I am mostly interested in the intersection of AI and Systems. The primary focus 
 
 Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link).
 
-I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. Let's colaborate 😄
+I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. Let's collaborate 😄
 
 <!-- I am mostly interested in the intersection of AI and Systems. I have been working on Machine Learning Models' capacity and continual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link).  -->
 
