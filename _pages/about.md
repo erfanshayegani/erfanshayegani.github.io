@@ -14,7 +14,7 @@ I'm a first-year PhD student at the Computer Science department of UC Riverside,
 
 I am mostly interested in the intersection of AI and Systems. The primary focus of my research lies at the crossroads of Natural Language Processing (NLP), Alignment, Security/Privacy, and Reliability of Large (Vision) Language Models (LLMs) as they are integrated into more intricate systems. I have a keen interest in investigating these systems from an adversarial perspective, aiming to break them in order to enhance their trustworthiness and safety; ultimately amplifying their capacity for scalability. 
 
-Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link).
+<!-- Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link). -->
 
 I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. Let's collaborate 😄
 
