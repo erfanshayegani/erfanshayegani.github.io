@@ -31,7 +31,7 @@ I never limit myself, enjoying the pursuit of interdisciplinary research, and I'
 ------ -->
 ## News!
 
-<img src="images/paper.svg" width="25" height="25"><span style="font-weight:400;font-size:16px"> September 2023: "Vulnerabilities of Large Language Models to Adversarial Attacks" was accepted to <span style="font-weight:700;font-size:16px">ACL 2024!</span></span>
+<img src="images/paper.svg" width="25" height="25"><span style="font-weight:400;font-size:16px"> September 2023: ["Vulnerabilities of Large Language Models to Adversarial Attacks](https://llm-vulnerability.github.io/)" was accepted to <span style="font-weight:700;font-size:16px">ACL 2024!</span>, Wow!🤩</span>
 
 <img src="images/paper.svg" width="25" height="25"><span style="font-weight:400;font-size:16px"> July 2023: I did my own first paper :D, [Plug and Pray: Exploiting off-the-shelf components of Multi-Modal Models](https://arxiv.org/abs/2307.14539), check it out!</span>
 
