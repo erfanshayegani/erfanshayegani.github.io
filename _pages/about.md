@@ -39,6 +39,7 @@ I never limit myself, enjoying the pursuit of interdisciplinary research, and I'
 
 <span style="font-weight:400;font-size:14px"> April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)!</span>
  -->
+ 
 News
 ------
 <font size="3">
@@ -50,7 +51,7 @@ News
     <a href="https://socalnlp.github.io/symp23/index.html#award" target="_blank">[Award]</a>
 	</li>
 	<li>
-		<b>Sep 2023</b>: Our paper "Vulnerabilities of Large Language Models to Adversarial Attacks" has been accepted to <b>ACL2024</b> for a tutorial! 
+		<b>Sep 2023</b>: Our paper "Vulnerabilities of Large Language Models to Adversarial Attacks" has been accepted for a tutorial to <b>ACL2024</b>! 
 		<a href="https://arxiv.org/abs/2310.10844" target="_blank">[paper]</a>
 	</li>
 	<li>
@@ -62,7 +63,7 @@ News
 		<a href="https://engage.ucr.edu/symposium" target="_blank">[paper]</a>
 	</li>
 	<li>
-		<b>Mar 2023</b>: Our paper "That Doesn't Go There: Attacks on Shared State in Multi-User Augmented Reality Applications" has been accepted to <b>USENIX SECURITY 2024</b> subject to major revision! 
+		<b>Mar 2023</b>: Our paper "That Doesn't Go There: Attacks on Shared State in Multi-User Augmented Reality Applications" has been accepted to <b>USENIX SECURITY 2024</b>! 
 		<a href="https://arxiv.org/abs/2308.09146">[paper]</a>
 	</li>
 </ul>
