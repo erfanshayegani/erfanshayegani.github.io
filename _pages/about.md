@@ -29,7 +29,7 @@ I never limit myself, enjoying the pursuit of interdisciplinary research, and I'
 
 <!-- News! 
 ------ -->
-## News!
+<!-- ## News!
 
 <span style="font-weight:400;font-size:14px"> Nov 2023: ["Jailbreak in Pieces"](https://arxiv.org/pdf/2307.14539.pdf): Won the <span style="font-weight:700;font-size:14px;color:red">"Best Paper Award"</span> at [SoCal NLP 2023](https://socalnlp.github.io/symp23/index.html#award)!
 
@@ -45,8 +45,52 @@ Education
 <img src="images/ucr.png" width="25" height="25"><span style="font-weight:400;font-size:14px"> Ph.D. in Computer Science at University of California, Riverside (2022-)</span>
 
 <img src="images/sharif.svg" width="25" height="25"><span style="font-weight:400;font-size:14px"> B.Sc. in Electrical Engineering at Sharif University of Technology (2017-2022)</span>
-<p style="font-weight:400;font-size:13px">Ranked 68th among 150,000 participants in Iran Nationwide University Entrance Exam (Konkur)</p>
+<p style="font-weight:400;font-size:13px">Ranked 68th among 150,000 participants in Iran Nationwide University Entrance Exam (Konkur)</p> -->
 
+News
+======
+------
+<font size="3">
+<div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
+<ul>
+	<li>
+		<b>Jul 2023</b>: Our paper "DecompX: Explaining Transformers Decisions by Propagating Token Decomposition" has been accepted to <b>ACL 2023</b>! 
+		<a href="https://aclanthology.org/2023.acl-long.149/" target="_blank">[paper]</a>
+	</li>
+	<li>
+		<b>Nov 2022</b>: Our paper "BERT on a Data Diet: Finding Important Examples by Gradient-Based Pruning" has been accepted to <b>ENLSP@NeurIPS2022</b>! 
+		<a href="https://arxiv.org/abs/2211.05610" target="_blank">[paper]</a>
+	</li>
+	<li>
+		<b>Apr 2022</b>: Our paper "GlobEnc: Quantifying Global Token Attribution by Incorporating the Whole Encoder Layer in Transformers" has been accepted to <b>NAACL 2022</b> main conference! 
+		<a href="https://aclanthology.org/2022.naacl-main.19.pdf" target="_blank">[paper]</a>
+		<a href="https://youtu.be/jgd9kUJlug4" target="_blank">[video]</a>
+	</li>
+	<li>
+		<b>Mar 2022</b>: Our paper "Metaphors in Pre-Trained Language Models: Probing and Generalization Across Datasets and Languages" has been accepted to <b>ACL 2022</b> main conference! 
+		<a href="https://aclanthology.org/2022.acl-long.144/" target="_blank">[paper]</a>
+		<a href="https://www.youtube.com/watch?v=UKWFZSiP7OY" target="_blank">[video]</a>
+	</li>
+	<li>
+		<b>Sep 2021</b>: Our paper "Not All Models Localize Linguistic Knowledge in the Same Place: A Layer-wise Probing on BERToids’ Representations" has been accepted to <b>EMNLP 2021</b> (BlackboxNLP)! 
+		<a href="https://aclanthology.org/2021.blackboxnlp-1.29/">[paper]</a>
+		<!-- <a href="/posts/layer-wise-probing-on-bertoids">[blog]</a> -->
+	</li>
+	<li>
+		<b>Aug 2021</b>: Accepted to enroll in graduate school as a top student without passing the entrance examinations, University of Tehran
+	</li>
+	<li>
+		<b>Dec 2020</b>: Received Faculty of Engineering Award for ranking 1st among all Computer Engineering students, University of Tehran
+	</li>
+	<li>
+		<b>Dec 2020</b>: <a href="https://nlpdataset.ir/" target="_blank">nlpdataset.ir</a> is online for listing NLP datasets and tools for  research and development in Farsi NLP.
+	</li>
+	<li>
+		<b>Dec 2019</b>: Received Faculty of Engineering Award for ranking 3rd among all Computer Engineering students, University of Tehran
+	</li>
+</ul>
+</div>
+</font>
 
 <!-- A data-driven personal website
 ======
