@@ -63,10 +63,10 @@ News
 		<b>Apr 2023</b>: I will be serving as the moderator & evaluator of student presentations at UGRS2023! 
 		<a href="https://engage.ucr.edu/symposium" target="_blank">[paper]</a>
 	</li>
-	<li>
+	<!-- <li>
 		<b>Mar 2023</b>: Our paper "That Doesn't Go There: Attacks on Shared State in Multi-User Augmented Reality Applications" has been accepted to <b>USENIX SECURITY 2024</b>! 
 		<a href="https://arxiv.org/abs/2308.09146">[paper]</a>
-	</li>
+	</li> -->
 </ul>
 </div>
 </font>
