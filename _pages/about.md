@@ -49,7 +49,8 @@ News
 		<b>Nov 2023</b>: 🏆 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" won the <span style="font-weight:700;font-size:14px;color:red">"Best Paper Award"</span> at <b>SoCal NLP 2023</b>!
 		<a href="https://arxiv.org/abs/2307.14539" target="_blank">[paper]</a>
     <a href="https://socalnlp.github.io/symp23/index.html#award" target="_blank">[Award]</a>
-    <a href="https://www1.cs.ucr.edu/news/2023/11/19/cse-team-won-best-paper-award-socal-nlp-symposium" target="_blank">[News]</a>
+    <a href="https://news.ucr.edu/articles/2024/01/09/ucr-outs-security-flaw-ai-query-models" target="_blank">[News1]</a>
+	<a href="https://www1.cs.ucr.edu/news/2023/11/19/cse-team-won-best-paper-award-socal-nlp-symposium" target="_blank">[News2]</a>
 	</li>
 	<li>
 		<b>Sep 2023</b>: Our paper "Vulnerabilities of Large Language Models to Adversarial Attacks" has been accepted for a tutorial to <b>ACL2024</b>! 
