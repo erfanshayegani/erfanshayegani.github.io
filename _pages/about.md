@@ -46,6 +46,10 @@ News
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Jan 2024</b>: 🎖🔥 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 5% of 7262 submissions)</span> at <b>ICLR2024</b>! 
+		<a href="https://openreview.net/forum?id=plmBsXHxgR" target="_blank">[OpenReview]</a>
+	</li>
+	<li>
 		<b>Nov 2023</b>: 🏆 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" won the <span style="font-weight:700;font-size:14px;color:red">"Best Paper Award"</span> at <b>SoCal NLP 2023</b>!
 		<a href="https://arxiv.org/abs/2307.14539" target="_blank">[paper]</a>
     <a href="https://socalnlp.github.io/symp23/index.html#award" target="_blank">[Award]</a>
