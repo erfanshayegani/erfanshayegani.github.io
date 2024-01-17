@@ -10,7 +10,7 @@ redirect_from:
 
 ## About me
 
-I'm a first-year PhD student at the Computer Science department of UC Riverside, where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/).
+I'm a Second-year PhD student at the Computer Science department of UC Riverside, where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/).
 
 My research interests are oriented toward Generative AI and Trustworthiness, particularly studying Large (Vision) Language Models (LLMs & LVLMs) and Multi-Modal Foundation Models with an emphasis on alignment, security, and reliability, all aimed at achieving scalability. I'm also investigating the parameter-efficient training and inference of Multi-Modal Models in multi-user scenarios for personalization purposes and exploring Retrieval Augmentation Generation (RAG) strategies to improve reasoning and reliability against adversaries. I am deeply passionate about integrating these intricate models into advanced systems with real-world applications. 
 
@@ -20,6 +20,8 @@ Honestly, the Dark Side of AI 😈 has always been very attractive to me, that's
 <!-- Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link). -->
 
 I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. Let's collaborate 😄
+
+<span style="font-weight:700;font-size:14px;color:red">I'm actively looking for Summer2024 Research Internship roles in ML/LLM/VLMs and would appreciate any interesting opportunities!</span>
 
 <!-- I am mostly interested in the intersection of AI and Systems. I have been working on Machine Learning Models' capacity and continual learning (Soon to be published), AR/VR privacy and security (Soon to be published), and NLP [(LLM's biases tackling from adversarial attacks perspective)](https://drive.google.com/file/d/1RCqOIbcls_TyYLF5-qF5xSh6Cb_RgwYB/view?usp=share_link).  -->
 
@@ -39,7 +41,7 @@ I never limit myself, enjoying the pursuit of interdisciplinary research, and I'
 
 <span style="font-weight:400;font-size:14px"> April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)!</span>
  -->
- 
+
 News
 ------
 <font size="3">
