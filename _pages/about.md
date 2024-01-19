@@ -50,6 +50,7 @@ News
 	<li>
 		<b>Jan 2024</b>: 🎖🔥 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 5% of 7262 submissions)</span> at <b>ICLR2024</b>! 
 		<a href="https://openreview.net/forum?id=plmBsXHxgR" target="_blank">[OpenReview]</a>
+		<a href="https://openreview.net/forum?id=plmBsXHxgR" target="_blank">[YoutubeAInews]</a>
 	</li>
 	<li>
 		<b>Nov 2023</b>: 🏆 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" won the <span style="font-weight:700;font-size:14px;color:red">"Best Paper Award"</span> at <b>SoCal NLP 2023</b>!
