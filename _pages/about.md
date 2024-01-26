@@ -48,6 +48,10 @@ News
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Feb 2023</b>: Gave a lightning talk on my AI Safety work at <b>Cohere For AI</b>! 
+		<a href="https://docs.google.com/presentation/d/12QSc14ph0gH6TMkoDo-PaLDyoqYokXhf/edit?usp=sharing&ouid=112584313979945870018&rtpof=true&sd=true" target="_blank">[Slides]</a>
+	</li>
+	<li>
 		<b>Jan 2024</b>: 🎖🔥 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 5% of 7262 submissions)</span> at <b>ICLR2024</b>! 
 		<a href="https://openreview.net/forum?id=plmBsXHxgR" target="_blank">[OpenReview]</a>
 		<a href="https://youtu.be/Gg13cyYui_o?t=829" target="_blank">[YoutubeAInews]</a>
