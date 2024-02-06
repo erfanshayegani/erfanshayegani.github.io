@@ -48,7 +48,7 @@ News
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
-		<b>Feb 2023</b>: Gave a lightning talk on my AI Safety work at <b>Cohere For AI</b>! 
+		<b>Feb 2024</b>: Gave a lightning talk on my AI Safety work at <b>Cohere For AI</b>! 
 		<a href="https://docs.google.com/presentation/d/12QSc14ph0gH6TMkoDo-PaLDyoqYokXhf/edit?usp=sharing&ouid=112584313979945870018&rtpof=true&sd=true" target="_blank">[Slides]</a>
 	</li>
 	<li>
