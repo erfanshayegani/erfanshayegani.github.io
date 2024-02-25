@@ -48,6 +48,10 @@ News
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Mar 2024</b>: Our paper "That Doesn't Go There: Attacks on Shared State in Multi-User Augmented Reality Applications" has been accepted to <b>USENIX SECURITY 2024</b>! 
+		<a href="https://arxiv.org/abs/2308.09146">[paper]</a>
+	</li>
+	<li>
 		<b>Feb 2024</b>: Gave a lightning talk on my AI Safety work at <b>Cohere For AI</b>! 
 		<a href="https://docs.google.com/presentation/d/12QSc14ph0gH6TMkoDo-PaLDyoqYokXhf/edit?usp=sharing&ouid=112584313979945870018&rtpof=true&sd=true" target="_blank">[Slides]</a>
 	</li>
@@ -76,10 +80,6 @@ News
 		<b>Apr 2023</b>: I will be serving as the moderator & evaluator of student presentations at UGRS2023! 
 		<a href="https://engage.ucr.edu/symposium" target="_blank">[paper]</a>
 	</li>
-	<!-- <li>
-		<b>Mar 2023</b>: Our paper "That Doesn't Go There: Attacks on Shared State in Multi-User Augmented Reality Applications" has been accepted to <b>USENIX SECURITY 2024</b>! 
-		<a href="https://arxiv.org/abs/2308.09146">[paper]</a>
-	</li> -->
 </ul>
 </div>
 </font>
