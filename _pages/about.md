@@ -42,7 +42,7 @@ I never limit myself, enjoying the pursuit of interdisciplinary research, and I'
 <span style="font-weight:400;font-size:14px"> April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)!</span>
  -->
 
-News
+News ⬇️ (Scroll down)
 ------
 <font size="3">
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
