@@ -48,6 +48,11 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Mar 2024</b>: My work on Cross-Modal Vulnerability Alignment in Vision-Language Models was accepted for a presentation at <b>SuperAGI Leap Summit 2024</b>! 
+		<a href="https://youtu.be/lYNwpJRJU9U?t=2407">[Video]</a>
+		<a href="https://superagi.com/agi-leap-summit/">[SuperAGI]</a>
+	</li>
+	<li>
 		<b>Mar 2024</b>: Our paper "That Doesn't Go There: Attacks on Shared State in Multi-User Augmented Reality Applications" has been accepted to <b>USENIX SECURITY 2024</b>! 
 		<a href="https://arxiv.org/abs/2308.09146">[paper]</a>
 	</li>
