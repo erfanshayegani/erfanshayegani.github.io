@@ -48,6 +48,9 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Apr 2024</b>:<img src="images/MSR.png" width="15" height="15"> I will be doing an internship at <b>Microsoft Research</b> in Summer 2024! Super Excited 👨🏻‍💻! 
+	</li>
+	<li>
 		<b>Mar 2024</b>: My work on Cross-Modal Vulnerability Alignment in Vision-Language Models was accepted for a presentation at <b>SuperAGI Leap Summit 2024</b>! 
 		<a href="https://youtu.be/lYNwpJRJU9U?t=2407">[Video]</a>
 		<a href="https://superagi.com/agi-leap-summit/">[SuperAGI]</a>
