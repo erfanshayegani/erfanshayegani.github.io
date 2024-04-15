@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Erfan Shayegani"
 title_separator          : "-"
-name                     : &name "Erfan Shayegani"
+name                     : &name "Erfan Shayegani 😈"
 description              : &description "2nd year Computer Science PhD student at UCR"
 url                      : https://erfanshayegani.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
