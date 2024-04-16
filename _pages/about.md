@@ -66,6 +66,7 @@ News ⬇️ (Scroll down)
 	<li>
 		<b>Jan 2024</b>: 🎖🔥 Our paper "Jailbreak in Pieces: Compositional Adversarial Attacks on Multi-Modal Language Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 5% of 7262 submissions)</span> at <b>ICLR2024</b>! 
 		<a href="https://openreview.net/forum?id=plmBsXHxgR" target="_blank">[OpenReview]</a>
+		<a href="https://recorder-v3.slideslive.com/?share=91193s=cf14f58c-ffdc-48c2-a834-5929ac1e8bc7" target="_blank">[SlidesLive-Video]</a>
 		<a href="https://youtu.be/Gg13cyYui_o?t=829" target="_blank">[YoutubeAInews]</a>
 	</li>
 	<li>
