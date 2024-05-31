@@ -51,6 +51,10 @@ News ⬇️ (Scroll down)
 		<b>Summer 2024</b>: I will be doing an internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20"> in Summer 2024! (Thrilled 💥👨🏻‍💻)
 	</li>
 	<li>
+		<b>June 2024</b>: 🏅🏆 I won the <span style="font-weight:700;font-size:14px;color:red">"Outstanding Teaching Award"</span> of the CS department of UCR! (Grateful 🤗) 
+		<a href="images/Best_Teaching_CS.jpg" target="_blank">[Award]</a>
+	</li>
+	<li>
 		<b>Mar 2024</b>: My work on Cross-Modal Vulnerability Alignment in Vision-Language Models was accepted for a presentation at <b>SuperAGI Leap Summit 2024</b>! 
 		<a href="https://youtu.be/lYNwpJRJU9U?t=2407">[Video]</a>
 		<a href="https://superagi.com/agi-leap-summit/">[SuperAGI]</a>
