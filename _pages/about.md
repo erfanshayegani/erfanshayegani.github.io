@@ -51,6 +51,10 @@ News ⬇️ (Scroll down)
 		<b>Summer 2024</b>: I will be doing an internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20"> in Summer 2024! (Thrilled 💥👨🏻‍💻)
 	</li>
 	<li>
+		<b>June 2024</b>: I'm honored to serve as a reviewer for <b>NextGenAISafety 2024 at ICML</b>!
+		<a href="https://icml.cc/virtual/2024/workshop/29944">[ICML2024]</a>
+	</li>
+	<li>
 		<b>June 2024</b>: 🏅🏆 I won the <span style="font-weight:700;font-size:14px;color:red">"Outstanding Teaching Award"</span> of the CS department of UCR! (Grateful 🤗) 
 		<a href="images/Best_Teaching_CS.jpg" target="_blank">[Award]</a>
 	</li>
