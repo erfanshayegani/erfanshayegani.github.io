@@ -48,6 +48,14 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>July 2024</b>: I gave a talk on AI Safety and AR/VR Security with implications on Human-Computer Interaction at MSR <img src="images/MSR.png" width="20" height="20">.
+		<a href="https://drive.google.com/file/d/12yGyDXAE_bZ38xdFbJSqoH3F9Lvna2vQ/view?usp=sharing">[Slides]</a>
+	</li>
+	<li>
+		<b>July 2024</b>: I presented my works on "Unlearning" and "Cross-Modality Safety Alignment" at McGill NLP group, Mila <img src="images/mila.png" width="20" height="20">.
+		<a href="https://mcgill-nlp.github.io/reading-group/summer-2024/erfan-shayegani/">[site]</a>
+	</li>
+	<li>
 		<b>Summer 2024</b>: I will be doing an internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20"> in Summer 2024! (Thrilled 💥👨🏻‍💻)
 	</li>
 	<li>
