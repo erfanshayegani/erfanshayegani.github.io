@@ -53,7 +53,7 @@ News ⬇️ (Scroll down)
 	</li>
 	<li>
 		<b>July 2024</b>: I presented my works on "Unlearning" and "Cross-Modality Safety Alignment" at McGill NLP group <img src="images/mila.png" width="45" height="45">.
-		<a href="https://mcgill-nlp.github.io/reading-group/summer-2024/erfan-shayegani/">[site]</a>
+		<a href="https://mcgill-nlp.github.io/reading-group/summer-2024/erfan-shayegani/">[Site]</a>
 	</li>
 	<li>
 		<b>Summer 2024</b>: I will be doing an internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20"> in Summer 2024! (Thrilled 💥👨🏻‍💻)
