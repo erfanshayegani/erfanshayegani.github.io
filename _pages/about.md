@@ -56,10 +56,6 @@ News ⬇️ (Scroll down)
 		Stay tuned for the research paper and the models (Cooking ... 👨🏻‍🍳🍳🔥)
 	</li>
 	<li>
-		<b>Sep 2024</b>: I successfully concluded my internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20">; The best experience I could imagine and thankful to my whole team! 
-		Stay tuned for the research paper and the models (Cooking ... 👨🏻‍🍳🍳🔥)
-	</li>
-	<li>
 		<b>Sep 2024</b>: My work was cited in the "International Scientific Report on the Safety of Advanced AI".
 		<a href="https://hal.science/hal-04612963/">[Report]</a>
 	</li>
