@@ -48,6 +48,14 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Sep 2024</b>: Our paper (Co-First Authored) on "Textual Unlearning" to solve "Cross-Modality Safety Alignment" was Accepted at <b>EMNLP 2024 Findings</b> - See y'all in Florida 🐊🌊🌴
+		<a href="https://arxiv.org/pdf/2406.02575">[Paper]</a>
+	</li>
+	<li>
+		<b>Sep 2024</b>: I successfully concluded my internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20">; The best experience I could imagine and thankful to my whole team! 
+		Stay tuned for the research paper and the models (Cooking ... 👨🏻‍🍳🍳🔥)
+	</li>
+	<li>
 		<b>Sep 2024</b>: I successfully concluded my internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20">; The best experience I could imagine and thankful to my whole team! 
 		Stay tuned for the research paper and the models (Cooking ... 👨🏻‍🍳🍳🔥)
 	</li>
