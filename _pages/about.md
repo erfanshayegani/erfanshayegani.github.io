@@ -48,6 +48,19 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Sep 2024</b>: I successfully concluded my internship at <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20">; The best experience I could imagine and thankful to my whole team! 
+		Stay tuned for the research paper and the models (Cooking ... 👨🏻‍🍳🍳🔥)
+	</li>
+	<li>
+		<b>Sep 2024</b>: My work was cited in the "International Scientific Report on the Safety of Advanced AI".
+		<a href="https://hal.science/hal-04612963/">[Report]</a>
+	</li>
+	<li>
+		<b>Aug 2024</b>: 👨🏻‍🎓 We gave a 3-hour tutorial on "AI Safety and Adversarial Attacks" at <b>ACL 2024</b>.
+		<a href="https://llm-vulnerability.github.io/">[Material]</a>
+		<a href="https://arxiv.org/abs/2310.10844">[Paper]</a>
+	</li>
+	<li>
 		<b>July 2024</b>: I gave a talk on AI Safety and AR/VR Security with implications on Human-Computer Interaction at MSR <img src="images/MSR.png" width="20" height="20">.
 		<a href="https://drive.google.com/file/d/12yGyDXAE_bZ38xdFbJSqoH3F9Lvna2vQ/view?usp=sharing">[Slides]</a>
 	</li>
