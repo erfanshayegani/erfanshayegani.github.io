@@ -117,7 +117,10 @@
       {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
-{% endif %}
+      {% endif %}
+      {% if author.resume %}
+      <li><a href="{{ author.resume }}"><i class="ai"></i>📝 Resume</a></li>
+      {% endif %}
       {% if author.huggingface %}
       <li><a href="{{ author.huggingface }}"><i class="ai"></i>🤗 HuggingFace</a></li>
       {% endif %}
