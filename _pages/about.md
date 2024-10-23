@@ -10,16 +10,17 @@ redirect_from:
 
 ## About me
 
-I'm a Second-year PhD student at the Computer Science department of UC Riverside, where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/).
+I'm a 3rd-year PhD student at the Computer Science department of UC Riverside, where I am very fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/). 
 
-My research interests are oriented toward Generative AI and Trustworthiness, particularly studying Large (Vision) Language Models (LLMs & LVLMs) and Multi-Modal Foundation Models with an emphasis on alignment, security, and reliability, all aimed at achieving scalability. I'm also investigating the parameter-efficient training and inference of Multi-Modal Models in multi-user scenarios for personalization purposes and exploring Retrieval Augmentation Generation (RAG) strategies to improve reasoning and reliability against adversaries. I am deeply passionate about integrating these intricate models into advanced systems with real-world applications. 
+My research focuses on Exploring Generative AI & Trustworthiness; particularly studying (Multimodal) Large Language Model Agents (MLLMs & LLMs) with an emphasis on Safety, Alignment, Ethics, Security/Privacy, Bias/Fairness and Sociotechnical challenges. I’m also interested in studying AI agents in interactive scenarios (e.g., Mixed Reality (AR/VR), Robotics and Embodied AI) to enhance Human-AI Interaction and improve anomaly detection.
 
-Honestly, the Dark Side of AI 😈 has always been very attractive to me, that's why I love attacking these models from an adversarial perspective (Dopamine Rush 🌊🧨) to find the vulnerabilities of current alignment and defense startegies with the goal of developing more robust systems. 
+Honestly, the Dark Side of AI 😈 has always been very attractive to me, that’s why I love attacking these models from an adversarial perspective (Dopamine Rush 🌊🧨) to find the vulnerabilities of current alignment and defense startegies with the goal of developing more robust systems.
 
+In Summer 2024, I had a great experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20"> working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I worked on Evaluation and Measurment methods of Empathy/User Satisfaction in LLM Chatbots as well as Training Context-Specific Expert Adapters to Steer empathy based on user's need.
 
 <!-- Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link). -->
 
-I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. Let's collaborate 😄
+<!-- I never limit myself, enjoying the pursuit of interdisciplinary research, and I'm enthusiastic about exploring innovative concepts. Let's collaborate 😄 -->
 
 <!-- <span style="font-weight:700;font-size:14px;color:red">I'm actively looking for Summer2024 Research Internship roles in ML/LLM/VLMs and would appreciate any interesting opportunities!</span> -->
 
