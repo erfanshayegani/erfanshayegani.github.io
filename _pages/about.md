@@ -14,9 +14,9 @@ I'm a 3rd-year PhD student at the Computer Science department of UC Riverside, w
 
 My research focuses on Exploring Generative AI & Trustworthiness; particularly studying (Multimodal) Large Language Model Agents (MLLMs & LLMs) with an emphasis on Safety, Alignment, Ethics, Security/Privacy, Bias/Fairness and Sociotechnical challenges. I’m also interested in studying AI agents in interactive scenarios (e.g., Mixed Reality (AR/VR), Robotics and Embodied AI) to enhance Human-AI Interaction and improve anomaly detection.
 
-Honestly, the Dark Side of AI 😈 has always been very attractive to me, that’s why I love attacking these models from an adversarial perspective (Dopamine Rush 🌊🧨) to find the vulnerabilities of current alignment and defense startegies with the goal of developing more robust systems.
+Honestly, the Dark Side of AI 😈 has always been very attractive to me, that’s why I enjoy attacking these models from an adversarial perspective (Dopamine Rush 🌊🧨) to find the vulnerabilities of current alignment and defense startegies with the goal of developing more robust systems.
 
-In Summer 2024, I had a great experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20"> working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I worked on Evaluation and Measurment methods of Empathy/User Satisfaction in LLM Chatbots as well as Training Context-Specific Expert Adapters to Steer empathy based on user's need.
+In Summer 2024, I had a great experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20"> working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and focus on being the "good guy," LoL 😈->😇. I worked on Evaluation and Measurment methods of Empathy/User Satisfaction in LLM Chatbots as well as Training Context-Specific Expert Adapters to Steer empathy based on user's need! 
 
 <!-- Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link). -->
 
