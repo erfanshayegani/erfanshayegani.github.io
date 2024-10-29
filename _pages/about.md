@@ -43,14 +43,14 @@ In Summer 2024, I had a great experience as a Research Intern at [Microsoft Rese
 
 <span style="font-weight:400;font-size:14px"> April 2023: I will be serving as the moderator & evaluator of student presentations at [UGRS2023](https://engage.ucr.edu/symposium)!</span>
  -->
-I will serve as the reviewer for ICLR 2025
+
 News ⬇️ (Scroll down)
 ------
 <font size="3">
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
-		<b>Oct 2024</b>: I will serve as the reviewer for ICLR 2025. 
+		<b>Oct 2024</b>: I will serve as a reviewer for <b>ICLR 2025</b>. 
 	</li>
 	<li>
 		<b>Sep 2024</b>: Our paper (Co-First Authored) on "Textual Unlearning" to solve "Cross-Modality Safety Alignment" was Accepted at <b>EMNLP 2024 Findings</b> - See y'all in Florida 🐊🌊🌴
