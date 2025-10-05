@@ -18,11 +18,11 @@ I'm a 4th-year PhD student at the Computer Science department of UC Riverside, w
 
 My research focuses on the intersection of Generative AI and trustworthiness, particularly on Multi-Modal Language Models (LLMs/MLLMs) and agents with an emphasis on Safety, Alignment, Robustness, Ethics, Fairness, and Privacy. I’m also passionate about advancing Multimodal Reasoning, understanding, Expert Specialization, Multilingual MLLMs, and Evaluation/Reward Modeling for adaptive, steerable systems. I have been also working on integrating AR/VR and Mixed Reality (MR) with AI Agents.
 
-Frankly, the Dark Side of AI 😈 has always been very attractive to me, that’s why I enjoy attacking these models from an adversarial perspective (Dopamine Rush 🌊🧨) to find the vulnerabilities of current alignment approaches with the goal of developing more robust systems.
+I'll be direct: the Dark Side of AI 😈 has always captivated me. I enjoy probing models from an adversarial perspective (Dopamine Rush 🌊🧨), because exposing alignment gaps is the fastest path to building safer, more robust systems.
 
 In Summer 2025, I rejoined Microsoft <img src="images/MSR.png" width="20" height="20"> as a Research Intern with the AI Frontiers and AI Red Team, working with [Besmira Nushi](https://besmiranushi.com/), [Roman Lutz](https://romanlutz.github.io/), and [Vibhav Vineet](https://vibhav-vineet.github.io/) on the Safety and Trustworthiness of Computer-Use Agents (CUAs).  
 
-In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). That time, I had to pause my adversarial mindset and focus on being the “good guy” 😈→😇 — developing evaluation and measurement methods for empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs.
+In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and be the “good guy” 😈→😇 — developing evaluation methods to measure empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs.
 
 
 
@@ -58,7 +58,7 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
-		<b>September 2025</b>: Wrapped up my Microsoft internship with "Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness". Check it out!
+		<b>September 2025</b>: Wrapped up my Microsoft internship with "Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness". Check it out 👀!
 		<a href="https://arxiv.org/abs/2510.01670" target="_blank">[ArXiv]</a>
 	</li>
 	<li>
