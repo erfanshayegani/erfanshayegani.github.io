@@ -20,7 +20,12 @@ My research focuses on the intersection of Generative AI and trustworthiness, pa
 
 Frankly, the Dark Side of AI 😈 has always been very attractive to me, that’s why I enjoy attacking these models from an adversarial perspective (Dopamine Rush 🌊🧨) to find the vulnerabilities of current alignment approaches with the goal of developing more robust systems.
 
-In both Summer 2024 and Summer 2025, I had a great experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20"> working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and focus on being the "good guy," LoL 😈->😇. I worked on Evaluation and Measurment methods of Empathy/User Satisfaction in LLM Chatbots as well as Training Context-Specific Expert Adapters to Steer empathy based on user's need! 
+In Summer 2025, I rejoined Microsoft <img src="images/MSR.png" width="20" height="20"> as a Research Intern with the AI Frontiers and AI Red Team, working with [Besmira Nushi](https://besmiranushi.com/), [Roman Lutz](https://romanlutz.github.io/), and [Vibhav Vineet](https://vibhav-vineet.github.io/) on the Safety and Trustworthiness of Computer-Use Agents (CUAs).  
+
+In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). That time, I had to pause my adversarial mindset and focus on being the “good guy” 😈→😇 — developing evaluation and measurement methods for empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs.
+
+
+
 
 <!-- Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link). -->
 
@@ -52,6 +57,10 @@ News ⬇️ (Scroll down)
 <font size="3">
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
+	<li>
+		<b>September 2025</b>: Wrapped up my Microsoft internship with "Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness". Check it out!
+		<a href="https://arxiv.org/abs/2510.01670" target="_blank">[ArXiv]</a>
+	</li>
 	<li>
 		<b>Summer 2025</b>: I will get back to <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20"> for my 2nd internship! (Super excited 💥👨🏻‍💻!)
 	</li>
