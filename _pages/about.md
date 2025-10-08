@@ -22,7 +22,7 @@ I'll be direct: the Dark Side of AI 😈 has always captivated me. I enjoy probi
 
 In Summer 2025, I rejoined Microsoft <img src="images/MSR.png" width="20" height="20"> as a Research Intern with the AI Frontiers and AI Red Team, working with [Besmira Nushi](https://besmiranushi.com/), [Roman Lutz](https://romanlutz.github.io/), and [Vibhav Vineet](https://vibhav-vineet.github.io/) on the Safety and Trustworthiness of Computer-Use Agents (CUAs).  
 
-In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and be the “good guy” 😈→😇 — developing evaluation methods to measure empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs.
+In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and be the “good guy” 😈→😇; developing evaluation methods to measure empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs.
 
 
 
