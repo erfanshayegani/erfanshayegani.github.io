@@ -58,7 +58,10 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
-		<b>September 2025</b>: Wrapped up my Microsoft internship with "Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness". Check it out 👀! We are also on the top daily papers on HuggingFace 🤗
+		<b>Oct 2025</b>: I will serve as a reviewer for <b>ICLR 2026</b>. 
+	</li>
+	<li>
+		<b>September 2025</b>: Wrapped up my Microsoft internship with <b>"Just Do It!? Computer-Use Agents Exhibit Blind Goal-Directedness"</b>. Check it out 👀! We are also on the top daily papers on HuggingFace 🤗
 		<a href="https://arxiv.org/abs/2510.01670" target="_blank">[ArXiv]</a>
 		<a href="https://huggingface.co/papers/date/2025-10-03" target="_blank">[Top Daily Papers 🤗]</a> 
 		<a href="https://www.youtube.com/watch?v=-fiCQNVG4y4" target="_blank">[YouTube]</a>
