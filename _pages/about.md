@@ -72,7 +72,8 @@ News ⬇️ (Scroll down)
 	<li>
 		<b>May 2025</b>: 🎖🔥 Our paper "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 2.6% of 12,107 submissions)</span> at <b>ICML2025</b>! 
 		<a href="https://openreview.net/pdf?id=F1ff8zcjPp" target="_blank">[OpenReview]</a>
-		<a href="https://news.ucr.edu/articles/2025/09/04/ucr-researchers-fortify-ai-against-rogue-rewiring" target="_blank">[News]</a>
+		<a href="https://news.ucr.edu/articles/2025/09/04/ucr-researchers-fortify-ai-against-rogue-rewiring" target="_blank">[News1]</a>
+		<a href="https://interestingengineering.com/innovation/hacking-prevent-ai-from-rogue-prompts" target="_blank">[News2]</a>
 	</li>
 	<li>
 		<b>Oct 2024</b>: I will serve as a reviewer for <b>ICLR 2025</b>. 
