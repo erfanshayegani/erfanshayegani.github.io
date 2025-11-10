@@ -58,6 +58,11 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Nov 2025</b>: Our paper on Role-Modality gaps in Multimodal models was Accepted at the <b>Responsible Foundation Models Workshop@NeurIPS 2025</b> - See y'all in San Diego 🏖️🌴
+		<a href="https://arxiv.org/abs/2504.03735" target="_blank">[Paper]</a>
+		<a href="https://responsible-fm.github.io/" target="_blank">[Workshop]</a>
+	</li>
+	<li>
 		<b>Oct 2025</b>: I will serve as a reviewer for <b>ICLR 2026</b>. 
 	</li>
 	<li>
