@@ -59,7 +59,7 @@ News ⬇️ (Scroll down)
 <ul>
 	<li>
 		<b>Nov 2025</b>: Our paper on Role-Modality gaps in Multimodal models was Accepted at the <b>Responsible Foundation Models Workshop@NeurIPS 2025</b> - See y'all in San Diego 🏖️🌴
-		<a href="https://arxiv.org/abs/2504.03735" target="_blank">[Paper]</a>
+		<a href="https://openreview.net/forum?id=s8lHtNgfLc" target="_blank">[Paper]</a>
 		<a href="https://responsible-fm.github.io/" target="_blank">[Workshop]</a>
 	</li>
 	<li>
