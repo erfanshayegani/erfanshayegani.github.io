@@ -10,7 +10,7 @@ redirect_from:
 
 ## About me
 
-I'm a 4th-year PhD student at the Computer Science department of UC Riverside, where I'm fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/). 
+I'm a 4th-year PhD student at the Computer Science department of University of California, Riverside, where I'm fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/). 
 
 <!-- My research focuses on Exploring Generative AI & Trustworthiness; particularly studying (Multimodal) Large Language Model Agents (MLLMs & LLMs) with an emphasis on Safety, Alignment, Ethics, Security/Privacy, Bias/Fairness and Sociotechnical challenges. I’m also interested in studying AI agents in interactive scenarios (e.g., Mixed Reality (AR/VR), Robotics and Embodied AI) to enhance Human-AI Interaction and improve anomaly detection. -->
 
