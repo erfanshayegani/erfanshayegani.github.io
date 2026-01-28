@@ -22,9 +22,9 @@ My research focuses on the intersection of Generative AI and trustworthiness, pa
 
 I'll be direct: the Dark Side of AI 😈 has always captivated me. I enjoy probing models from an adversarial perspective (Dopamine Rush 🌊🧨), because exposing alignment gaps is the fastest path to building safer, more robust systems.
 
-In Summer 2025, I rejoined Microsoft <img src="images/MSR.png" width="20" height="20"> as a Research Intern with the AI Frontiers and AI Red Team, working with [Besmira Nushi](https://besmiranushi.com/), [Roman Lutz](https://romanlutz.github.io/), and [Vibhav Vineet](https://vibhav-vineet.github.io/) on the Safety and Trustworthiness of Computer-Use Agents (CUAs), introducing the "Blind Goal-Directedness" phenomenon.   
+In Summer 2025, I rejoined Microsoft <img src="images/MSR.png" width="20" height="20"> as a Research Intern with the AI Frontiers and AI Red Team, working with [Besmira Nushi](https://besmiranushi.com/), [Roman Lutz](https://romanlutz.github.io/), and [Vibhav Vineet](https://vibhav-vineet.github.io/) on the Safety and Trustworthiness of Computer-Use Agents (CUAs), introducing the "Blind Goal-Directedness" phenomenon which led to a publication at ICLR 2026.
 
-In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and be the “good guy” 😈→😇; developing evaluation methods to measure empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs.
+In Summer 2024, I also had an incredible experience as a Research Intern at [Microsoft Research](https://www.microsoft.com/en-us/research/) <img src="images/MSR.png" width="20" height="20">, working with [Javier Hernandez](http://javierhr.com/) and [Jina Suh](https://www.microsoft.com/en-us/research/people/jinsuh/). There, I had to pause my adversarial mindset and be the “good guy” 😈→😇; developing evaluation methods to measure empathy and user satisfaction in LLM chatbots, and training context-specific expert adapters to dynamically steer empathy based on user needs; which led to two publications, one at IEEE Transactions of Affective Computing as well as a Patent.
 
 
 <!-- Here you can find my [CV](https://drive.google.com/file/d/1Ifl76axYbNrwn3AmkGRNLfZGqTpd2eEt/view?usp=share_link). -->
@@ -66,17 +66,15 @@ News ⬇️ (Scroll down)
 		<b>Jan 2026</b>: 🥳🎉 2 of my papers got accepted at <b>ICLR 2026</b>!
 		<ul>
 			<li>
-			Computer-Use Agent (CUA) paper — 
-			<a href="https://openreview.net/forum?id=9W4bPRsEIT" target="_blank">OpenReview</a>
+			Computer-Use Agents (CUA) Blind Goal-Directedness <a href="https://openreview.net/forum?id=9W4bPRsEIT" target="_blank">[OpenReview]</a>
 			</li>
 			<li>
-			Multimodal Alignment Blindspots paper —
-			<a href="https://openreview.net/forum?id=HRkrWi3FWP" target="_blank">OpenReview</a>
+			Multimodal Alignment Blindspots <a href="https://openreview.net/forum?id=HRkrWi3FWP" target="_blank">[OpenReview]</a>
 			</li>
 		</ul>
 	</li>
 	<li>
-		<b>Jan 2026</b>: Honored to give a talk on my research at ServiceNow AI Research <img src="images/servicenow.png" width="45" height="45">.
+		<b>Jan 2026</b>: 🎤 Honored to give a talk on my research at ServiceNow AI Research <img src="images/servicenow2.png" width="22" height="22">.
 	</li>
 	<li>
 		<b>Jan 2026</b>: I will serve as a reviewer for <b>ICML 2026</b>, <b>COLM 2026</b>, <b>CVPR 2026</b>, and <b>ACL ARR 2026</b>.
