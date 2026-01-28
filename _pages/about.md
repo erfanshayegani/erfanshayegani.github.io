@@ -55,7 +55,7 @@ In Summer 2024, I also had an incredible experience as a Research Intern at [Mic
 News ⬇️ (Scroll down)
 ------
 <font size="3">
-<div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
+<div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<!-- <li>
 		<b>Jan 2026</b>: 🏅🎉 2 of my papers got accepted at <b>ICLR 2026</b>! The Computer-Use Agent (CUA) paper out of my internship at Microsoft; and the Multimodal Alignment BlindSpots paper. 
@@ -74,7 +74,7 @@ News ⬇️ (Scroll down)
 		</ul>
 	</li>
 	<li>
-		<b>Jan 2026</b>: 🎤 Honored to give a talk on my research at ServiceNow AI Research <img src="images/servicenow2.png" width="22" height="22">.
+		<b>Jan 2026</b>: 🎤 Honored to give a talk on my research at ServiceNow AI Research <img src="images/servicenow.png" width="22" height="22">.
 	</li>
 	<li>
 		<b>Jan 2026</b>: I will serve as a reviewer for <b>ICML 2026</b>, <b>COLM 2026</b>, <b>CVPR 2026</b>, and <b>ACL ARR 2026</b>.
