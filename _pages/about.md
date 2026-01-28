@@ -57,6 +57,30 @@ News ⬇️ (Scroll down)
 <font size="3">
 <div style="overflow-y: auto; max-height: 300px; padding-right: 10px; font-size: 15.5px;">
 <ul>
+	<!-- <li>
+		<b>Jan 2026</b>: 🏅🎉 2 of my papers got accepted at <b>ICLR 2026</b>! The Computer-Use Agent (CUA) paper out of my internship at Microsoft; and the Multimodal Alignment BlindSpots paper. 
+		<a href="https://openreview.net/forum?id=9W4bPRsEIT" target="_blank">[CUA-OpenReview]</a>
+		<a href="https://openreview.net/forum?id=HRkrWi3FWP" target="_blank">[Multimodal-OpenReview]</a>
+	</li> -->
+	<li>
+		<b>Jan 2026</b>: 🥳🎉 2 of my papers got accepted at <b>ICLR 2026</b>!
+		<ul>
+			<li>
+			Computer-Use Agent (CUA) paper — 
+			<a href="https://openreview.net/forum?id=9W4bPRsEIT" target="_blank">OpenReview</a>
+			</li>
+			<li>
+			Multimodal Alignment Blindspots paper —
+			<a href="https://openreview.net/forum?id=HRkrWi3FWP" target="_blank">OpenReview</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<b>Jan 2026</b>: Honored to give a talk on my research at ServiceNow AI Research <img src="images/servicenow.png" width="45" height="45">.
+	</li>
+	<li>
+		<b>Jan 2026</b>: I will serve as a reviewer for <b>ICML 2026</b>, <b>COLM 2026</b>, <b>CVPR 2026</b>, and <b>ACL ARR 2026</b>.
+	</li>
 	<li>
 		<b>Nov 2025</b>: Our paper on Role-Modality gaps in Multimodal models was Accepted at the <b>Responsible Foundation Models Workshop@NeurIPS 2025</b> - See y'all in San Diego 🏖️🌴
 		<a href="https://openreview.net/forum?id=s8lHtNgfLc" target="_blank">[Paper]</a>
