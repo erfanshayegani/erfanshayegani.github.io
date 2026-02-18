@@ -57,11 +57,11 @@ News ⬇️ (Scroll down)
 <font size="3">
 <div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
-	<!-- <li>
-		<b>Jan 2026</b>: 🏅🎉 2 of my papers got accepted at <b>ICLR 2026</b>! The Computer-Use Agent (CUA) paper out of my internship at Microsoft; and the Multimodal Alignment BlindSpots paper. 
-		<a href="https://openreview.net/forum?id=9W4bPRsEIT" target="_blank">[CUA-OpenReview]</a>
-		<a href="https://openreview.net/forum?id=HRkrWi3FWP" target="_blank">[Multimodal-OpenReview]</a>
-	</li> -->
+	<li>
+		<b>Feb 2026</b>: 🎙️ Excited to give a talk on my research at Cohere!
+		<img src="images/cohere.png" width="22" height="22">.
+		<a href="" target="_blank">[VIDEO COMING SOON]</a>
+	</li>
 	<li>
 		<b>Jan 2026</b>: 🥳🎉 2 of my papers got accepted at <b>ICLR 2026</b>!
 		<ul>
@@ -74,7 +74,12 @@ News ⬇️ (Scroll down)
 		</ul>
 	</li>
 	<li>
-		<b>Jan 2026</b>: 🎤 Honored to give a talk on my research at ServiceNow AI Research <img src="images/servicenow.png" width="22" height="22">.
+		<b>Jan 2026</b>: Our Survey has been cited in the <b>"International AI Safety Report 2026"</b>!
+		<a href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026" target="_blank">[Report]</a>
+	</li>
+	<li>
+		<b>Jan 2026</b>: 🎤 Honored to give a talk on my research at ServiceNow AI Research 
+		<img src="images/servicenow.png" width="22" height="22">.
 	</li>
 	<li>
 		<b>Jan 2026</b>: I will serve as a reviewer for <b>ICML 2026</b>, <b>COLM 2026</b>, <b>CVPR 2026</b>, and <b>ACL ARR 2026</b>.
