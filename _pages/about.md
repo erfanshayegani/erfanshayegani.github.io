@@ -58,9 +58,8 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
-		<b>Feb 2026</b>: 🎙️ Excited to give a talk on my research at Cohere!
-		<img src="images/cohere.png" width="22" height="22">.
-		<a href="" target="_blank">[VIDEO COMING SOON]</a>
+		<b>Feb 2026</b>: 🎙️ Excited to give a talk on my research at Cohere <img src="images/cohere.png" width="22" height="22">!
+		<a href="" target="_blank">[COMING SOON]</a>
 	</li>
 	<li>
 		<b>Jan 2026</b>: 🥳🎉 2 of my papers got accepted at <b>ICLR 2026</b>!
