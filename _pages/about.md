@@ -203,7 +203,7 @@ News ⬇️ (Scroll down)
 	</li>
 	<li>
 		<b>Apr 2023</b>: I will be serving as the moderator & evaluator of student presentations at UGRS2023! 
-		<a href="https://engage.ucr.edu/symposium" target="_blank">[paper]</a>
+		<a href="https://engage.ucr.edu/symposium" target="_blank">[Link]</a>
 	</li>
 </ul>
 </div>
