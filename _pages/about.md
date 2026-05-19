@@ -59,7 +59,7 @@ News ⬇️ (Scroll down)
 <ul>
 <ul>
 	<li>
-		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 💥👨🏻‍💻!)
+		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 🤩!)
 	</li>
 	<li>
 		<b>May 2026</b>: 🎙️ Excited to give another talk on CUAs at Cohere <img src="images/cohere.png" width="22" height="22">!
