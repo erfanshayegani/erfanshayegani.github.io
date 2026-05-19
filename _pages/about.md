@@ -62,11 +62,11 @@ News ⬇️ (Scroll down)
 		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 🤩!)
 	</li>
 	<li>
-		<b>May 2026</b>: 🎙️ Excited to give another talk on CUAs at Cohere <img src="images/cohere.png" width="22" height="22">!
+		<b>May 2026</b>: 🎙️ I gave another talk on CUAs at Cohere <img src="images/cohere.png" width="22" height="22">!
 		<a href="https://www.youtube.com/watch?v=SOe5PhrtM60&t=1237s&pp=ygUQZXJmYW5zIHNoYXllZ2FuaQ%3D%3D" target="_blank">[YouTube]</a>
 	</li>
 	<li>
-		<b>April 2026</b>: ⭐️ Excited and honored to be selected as an <span style="font-weight:700;font-size:14px;color:red">"ML & Systems Rising Star 2026"</span>!
+		<b>April 2026</b>: ⭐️ Honored to be selected as an <span style="font-weight:700;font-size:14px;color:red">"ML & Systems Rising Star 2026"</span>!
 		<a href="https://mlcommons.org/2026/05/2026-rising-stars/" target="_blank">[ML Rising Stars]</a>
 	</li>
 	<li>
@@ -82,7 +82,7 @@ News ⬇️ (Scroll down)
 		<a href="" target="_blank">[COMING SOON]</a>
 	</li>
 	<li>
-		<b>Jan 2026</b>: 🥳🎉 2 of my papers got accepted at <b>ICLR 2026</b>!
+		<b>Jan 2026</b>: 🥳🎉 2 of my papers got accepted at <b>ICLR 2026</b> 🇧🇷!
 		<ul>
 			<li>
 			Computer-Use Agents (CUA) Blind Goal-Directedness <a href="https://openreview.net/forum?id=9W4bPRsEIT" target="_blank">[OpenReview]</a>
