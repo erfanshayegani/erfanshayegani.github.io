@@ -207,7 +207,7 @@ News ⬇️ (Scroll down)
 	</li>
 </ul>
 </div>
-</font>
+</font>>
 
 Education
 ------
