@@ -57,6 +57,26 @@ News ⬇️ (Scroll down)
 <font size="3">
 <div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
+<ul>
+	<li>
+		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 💥👨🏻‍💻!)
+	</li>
+	<li>
+		<b>May 2026</b>: 🎙️ Excited to give another talk on CUAs at Cohere <img src="images/cohere.png" width="22" height="22">!
+		<a href="https://www.youtube.com/watch?v=SOe5PhrtM60&t=1237s&pp=ygUQZXJmYW5zIHNoYXllZ2FuaQ%3D%3D" target="_blank">[YouTube]</a>
+	</li>
+	<li>
+		<b>April 2026</b>: ⭐️ Excited and honored to be selected as an <span style="font-weight:700;font-size:14px;color:red">"ML & Systems Rising Star 2026"</span>!
+		<a href="https://mlcommons.org/2026/05/2026-rising-stars/" target="_blank">[ML Rising Stars]</a>
+	</li>
+	<li>
+		<b>March 2026</b>: 🎖🔥 Our paper "Modeling Hierarchical Thinking in Large Reasoning Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 2.2% of submissions)</span> at <b>ICML2026</b>! 
+		<a href="https://openreview.net/forum?id=N44P3zrrgO" target="_blank">[OpenReview]</a>
+	</li>
+	<li>
+		<b>Feb 2026</b>: I won the <b>2nd place in the UCR Graduate Research Symposium</b> 🥈!
+		<a href="https://graduate.ucr.edu/gradsymposium#best-presentation-awards-2026" target="_blank">[Winners]</a>
+	</li>
 	<li>
 		<b>Feb 2026</b>: 🎙️ Excited to give a talk on my research at Cohere <img src="images/cohere.png" width="22" height="22">!
 		<a href="" target="_blank">[COMING SOON]</a>
@@ -96,6 +116,7 @@ News ⬇️ (Scroll down)
 		<a href="https://arxiv.org/abs/2510.01670" target="_blank">[ArXiv]</a>
 		<a href="https://huggingface.co/papers/date/2025-10-03" target="_blank">[Top Daily Papers 🤗]</a> 
 		<a href="https://www.youtube.com/watch?v=-fiCQNVG4y4" target="_blank">[YouTube]</a>
+		<a href="https://news.ucr.edu/articles/2026/05/13/blind-ambition-ai-agents-can-turn-tasks-digital-disasters" target="_blank">[News1]</a>
 	</li>
 	<li>
 		<b>Summer 2025</b>: I will get back to <b>Microsoft Research</b> <img src="images/MSR.png" width="20" height="20"> for my 2nd internship! (Super excited 💥👨🏻‍💻!)
