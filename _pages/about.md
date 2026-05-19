@@ -57,7 +57,6 @@ News ⬇️ (Scroll down)
 <font size="3">
 <div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
-<ul>
 	<li>
 		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 🤩!)
 	</li>
@@ -207,7 +206,7 @@ News ⬇️ (Scroll down)
 	</li>
 </ul>
 </div>
-</font>>
+</font>
 
 Education
 ------
