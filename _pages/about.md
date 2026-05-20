@@ -62,7 +62,7 @@ News ⬇️ (Scroll down)
 	</li>
 	<li>
 		<b>May 2026</b>: 🎙️ I gave another talk on CUAs at Cohere <img src="images/cohere.png" width="22" height="22">!
-		<a href="https://www.youtube.com/watch?v=SOe5PhrtM60&t=1237s&pp=ygUQZXJmYW5zIHNoYXllZ2FuaQ%3D%3D" target="_blank">[YouTube]</a>
+		<a href="https://www.youtube.com/watch?v=SOe5PhrtM60&t=5s" target="_blank">[YouTube]</a>
 	</li>
 	<li>
 		<b>April 2026</b>: ⭐️ Honored to be selected as an <span style="font-weight:700;font-size:14px;color:red">"ML & Systems Rising Star 2026"</span>!
