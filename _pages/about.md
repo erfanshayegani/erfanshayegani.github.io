@@ -74,7 +74,8 @@ News ⬇️ (Scroll down)
 	</li>
 	<li>
 		<b>Feb 2026</b>: I won the <b>2nd place in the UCR Graduate Research Symposium</b> 🥈!
-		<a href="https://graduate.ucr.edu/gradsymposium#best-presentation-awards-2026" target="_blank">[Winners]</a>
+		<a href="https://badges.ucr.edu/14cd892b-319b-49e2-9dbb-fc3406709e80#acc.hdvMGXFs" target="_blank">[Award]</a>
+		<a href="files/Certificate.pdf" target="_blank">[Certificate]</a>
 	</li>
 	<li>
 		<b>Feb 2026</b>: 🎙️ Excited to give a talk on my research at Cohere <img src="images/cohere.png" width="22" height="22">!
