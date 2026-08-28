@@ -69,7 +69,7 @@ News ⬇️ (Scroll down)
 		<a href="https://mlcommons.org/2026/05/2026-rising-stars/" target="_blank">[ML Rising Stars]</a>
 	</li>
 	<li>
-		<b>March 2026</b>: 🎖🔥 Our paper "Modeling Hierarchical Thinking in Large Reasoning Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Spotlight presentation(top 2.2% of submissions)</span> at <b>ICML2026</b>! 
+		<b>March 2026</b>: 🎖🔥 Our paper "Modeling Hierarchical Thinking in Large Reasoning Models" was accepted for <span style="font-weight:700;font-size:14px;color:red">"Oral presentation(top 0.7% of submissions)</span> at <b>ICML2026</b>! 
 		<a href="https://openreview.net/forum?id=N44P3zrrgO" target="_blank">[OpenReview]</a>
 	</li>
 	<li>
