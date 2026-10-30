@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Erfan Shayegani 😈"
 title_separator          : "-"
 name                     : &name "Erfan Shayegani 😈"
-description              : &description "4th-year Computer Science PhD student at UCR"
+description              : &description "5th-year Computer Science PhD student at UCR"
 url                      : https://erfanshayegani.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "erfanshayegani/erfanshayegani.github.io"
@@ -115,7 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  resume           : "https://drive.google.com/file/d/16D4GcQNx5kiAsiSejrNde1LLIzR4pKLR/view?usp=sharing"
+  resume           : "https://drive.google.com/file/d/13HoqjSbzR795YfuSh0NGbhV-_8Tjqy5Y/view?usp=sharing"
   huggingface      : "https://huggingface.co/Erfan-Shayegani"
 
 # Reading Files
