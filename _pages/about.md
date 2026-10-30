@@ -58,6 +58,13 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Nov 2026</b>: 🎙️ I will give a talk on "Visual Grounding Safety" at Cohere <img src="images/cohere.png" width="22" height="22">!
+		<a href="" target="_blank">[YouTube]</a>
+	</li>
+	<li>
+		<b>October 2026</b>: ✅ Wrapped up my internship at <b>Apple </b> and <a href="https://arxiv.org/abs/2610.05637" target="_blank">[arXiv]</a>"Visual Grounding Safety in Vision-Language Models" is out! 
+	</li>
+	<li>
 		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 🤩!)
 	</li>
 	<li>
