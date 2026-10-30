@@ -10,7 +10,7 @@ redirect_from:
 
 ## About me
 
-I'm a 4th-year PhD student at the Computer Science department of University of California, Riverside, where I'm fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/). 
+I'm a 5th-year PhD student at the Computer Science department of University of California, Riverside, where I'm fortunate to be advised by Prof. [Nael Abu-Ghazaleh](https://www.cs.ucr.edu/~nael/) and Prof. [Yue Dong](https://yuedong.us/). 
 
 <!-- My research focuses on Exploring Generative AI & Trustworthiness; particularly studying (Multimodal) Large Language Model Agents (MLLMs & LLMs) with an emphasis on Safety, Alignment, Ethics, Security/Privacy, Bias/Fairness and Sociotechnical challenges. I’m also interested in studying AI agents in interactive scenarios (e.g., Mixed Reality (AR/VR), Robotics and Embodied AI) to enhance Human-AI Interaction and improve anomaly detection. -->
 
@@ -21,6 +21,9 @@ I'm a 4th-year PhD student at the Computer Science department of University of C
 My research focuses on the intersection of Generative AI and trustworthiness, particularly on Multimodal Language Models (LLMs/MLLMs) and AI Agents such as Computer-Use Agents (CUAs) with an emphasis on Alignment, Robustness, Safety, Ethics, Fairness, Bias, and Security/Privacy. Additionally, I’m deeply interested in advancing Multimodal Understanding, Reasoning, and Retrieval, as well as Expert Specialization, Personalization, Multilingual MLLMs. My work also involves exploring novel Evaluation methods, Reward Modeling, and Post-Training Algorithms (e.g., Machine Unlearning, Reinforcement Learning-based, etc.) for adaptive, steerable, and contextually aligned AI agents. I have been also working on integrating AR/VR and Mixed Reality (MR) with AI Agents.
 
 I'll be direct: the Dark Side of AI 😈 has always captivated me. I enjoy probing models from an adversarial perspective (Dopamine Rush 🌊🧨), because exposing alignment gaps is the fastest path to building safer, more robust systems.
+
+In Summer 2026, I was an AIML Research Intern at Apple , working with [Shruti Palaskar](https://shrutijpalaskar.github.io/), [Leon Gatys](https://www.linkedin.com/in/lgatys/), and [Kundan Krishna](https://kkrishna.in/). We identified the "Visual Grounding Safety Gap" phenomenon in multimodal models. We developed a training approach incorporating 
+"self-distillation" that substantially closes this gap while preserving visual grounding capabilities and limiting over-refusal. Read our paper: [Visual Grounding Safety in Vision-Language Models](https://arxiv.org/abs/2610.05637).
 
 In Summer 2025, I rejoined Microsoft <img src="images/MSR.png" width="20" height="20"> as a Research Intern with the AI Frontiers and AI Red Team, working with [Besmira Nushi](https://besmiranushi.com/), [Roman Lutz](https://romanlutz.github.io/), and [Vibhav Vineet](https://vibhav-vineet.github.io/) on the Safety and Trustworthiness of Computer-Use Agents (CUAs), introducing the "Blind Goal-Directedness" phenomenon which led to a publication at ICLR 2026.
 
@@ -62,7 +65,7 @@ News ⬇️ (Scroll down)
 		<a href="" target="_blank">[YouTube]</a>
 	</li>
 	<li>
-		<b>October 2026</b>: ✅ Wrapped up my internship at <b>Apple </b> and <a href="https://arxiv.org/abs/2610.05637" target="_blank">[arXiv]</a>"Visual Grounding Safety in Vision-Language Models" is out! 
+		<b>October 2026</b>: ✅ Wrapped up my internship at <b>Apple </b> and <a href="https://arxiv.org/abs/2610.05637" target="_blank">["Visual Grounding Safety in Vision-Language Models"]</a> is out! 
 	</li>
 	<li>
 		<b>Summer 2026</b>: I will do a research internship at <b>Apple </b> (Very excited 🤩!)
