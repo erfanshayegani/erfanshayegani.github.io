@@ -51,8 +51,14 @@
 .page__content {
 
   h2 {
+    margin-top: 1.25em; /* tighter gaps between sections (was 2em) */
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  /* No big gap above the first heading of a page (e.g. "About me"). */
+  > h2:first-child {
+    margin-top: 0;
   }
 
   p, li, dl {

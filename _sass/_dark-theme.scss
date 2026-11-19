@@ -170,6 +170,13 @@ html[data-theme="dark"] {
     background: $dark-text;
   }
 
+  /* sidebar divider */
+  .sidebar::before {
+    /* orange in dark mode */
+    background: linear-gradient(to bottom, transparent, #fb923c 5%, #fb923c 95%, transparent);
+    opacity: 0.8;
+  }
+
   /* sidebar / author profile */
   .author__avatar img {
     border-color: $dark-border;
