@@ -18,7 +18,7 @@ I'm a 5th-year PhD student at the Computer Science department of University of C
 
 <!-- My research focuses on the intersection of Generative AI and trustworthiness, particularly on Multi-Modal Language Models (LLMs/MLLMs) and agents with an emphasis on Safety, Alignment, Robustness, Ethics, Fairness, and Privacy. I’m also passionate about advancing Multimodal Reasoning, understanding, Expert Specialization, Multilingual MLLMs, and Evaluation/Reward Modeling for adaptive, steerable systems. I have been also working on integrating AR/VR and Mixed Reality (MR) with AI Agents. -->
 
-My research focuses on the intersection of Generative AI and trustworthiness, particularly on Multimodal Language Models (LLMs/MLLMs) and AI Agents such as Computer-Use Agents (CUAs) with an emphasis on Alignment, Robustness, Safety, Ethics, Fairness, Bias, and Security/Privacy. Additionally, I’m deeply interested in advancing Multimodal Understanding, Reasoning, and Retrieval, as well as Expert Specialization, Personalization, Multilingual MLLMs. My work also involves exploring novel Evaluation methods, Reward Modeling, and Post-Training Algorithms (e.g., Machine Unlearning, Reinforcement Learning-based, etc.) for adaptive, steerable, and contextually aligned AI agents. I have been also working on integrating AR/VR and Mixed Reality (MR) with AI Agents.
+My research focuses on the intersection of Generative AI and trustworthiness, particularly on Multimodal Language Models (LLMs/MLLMs) and AI Agents such as Computer-Use Agents (CUAs) with an emphasis on Alignment, Robustness, Safety, Ethics, Bias, and Security/Privacy. Additionally, I’m interested in advancing Multimodal Reasoning, Personalization & Memory, and Developing Harnesses and RL Environments for AI Agents. My work also involves exploring novel Evaluation methods, Reward Modeling, and Post-Training methods (e.g., Machine Unlearning, Reinforcement Learning-based, etc.) for adaptive, steerable, and contextually aligned AI agents. I have been also working on integrating AR/VR and Mixed Reality (MR) with AI Agents.
 
 I'll be direct: the Dark Side of AI 😈 has always captivated me. I enjoy probing models from an adversarial perspective (Dopamine Rush 🌊🧨), because exposing alignment gaps is the fastest path to building safer, more robust systems.
 
@@ -61,8 +61,12 @@ News ⬇️ (Scroll down)
 <div style="overflow-y: auto; max-height: 400px; padding-right: 10px; font-size: 15.5px;">
 <ul>
 	<li>
+		<b>Nov 2026</b>: 🌴 3 papers were accepted for presentation at SoCal NLP 2026!
+		<a href="https://socalnlp.github.io/symp26/index.html#paper" target="_blank">[AcceptedWork]</a>
+	</li>
+	<li>
 		<b>Nov 2026</b>: 🎙️ I will give a talk on "Visual Grounding Safety" at Cohere <img src="images/cohere.png" width="22" height="22">!
-		<a href="" target="_blank">[YouTube]</a>
+		<a href="https://www.youtube.com/watch?v=IYSE0NAaPig" target="_blank">[YouTube]</a>
 	</li>
 	<li>
 		<b>October 2026</b>: ✅ Wrapped up my internship at <b>Apple </b> and <a href="https://arxiv.org/abs/2610.05637" target="_blank">["Visual Grounding Safety in Vision-Language Models"]</a> is out! 
