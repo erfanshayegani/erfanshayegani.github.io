@@ -1,9 +1,10 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Blog posts"
+permalink: /blog/
+title: "Blog Posts"
 author_profile: true
 redirect_from:
+  - /year-archive/
   - /wordpress/blog-posts/
 ---
 
@@ -15,5 +16,5 @@ redirect_from:
     <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
-  {% include archive-single.html %}
+  {% include blog-list-item.html %}
 {% endfor %}

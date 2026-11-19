@@ -7,6 +7,13 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--theme">
+            <!-- a span, not a <button>: the greedy-nav script hides every button inside #site-nav -->
+            <span id="theme-toggle" class="theme-toggle" role="button" tabindex="0" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <i class="fas fa-moon theme-toggle__icon--moon" aria-hidden="true"></i>
+              <i class="fas fa-sun theme-toggle__icon--sun" aria-hidden="true"></i>
+            </span>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -21,3 +28,23 @@
     </div>
   </div>
 </div>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    function sync() {
+      btn.setAttribute('aria-pressed', root.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
+    }
+    sync();
+    function toggle() {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      sync();
+    }
+    btn.addEventListener('click', toggle);
+    btn.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  })();
+</script>

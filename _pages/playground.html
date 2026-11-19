@@ -1,0 +1,44 @@
+---
+layout: archive
+title: "Playground"
+permalink: /playground/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="playground-intro">
+  Things you can try right here. They run <strong>on your own device</strong>: the model is
+  downloaded once into your browser and runs on your GPU, so nothing you type is sent to a model
+  server.
+</p>
+
+<div class="playground-grid">
+  <article class="playground-card">
+    <div class="playground-card__icon" aria-hidden="true">🧪</div>
+    <div class="playground-card__body">
+      <h2 class="playground-card__title">Website Agent</h2>
+      <p class="playground-card__desc">
+        A small research agent running
+        <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B-ONNX" target="_blank" rel="noopener">LFM2.5-2.6B</a>
+        in your browser. It plans its steps, asks clarifying questions, searches Wikipedia, runs Python
+        for calculations, and can use your location if you allow it. You can watch its thinking and
+        every tool call live.
+      </p>
+      <ul class="playground-card__meta">
+        <li><i class="fas fa-fw fa-download" aria-hidden="true"></i> ~1.5 GB one-time download (cached)</li>
+        <li><i class="fas fa-fw fa-microchip" aria-hidden="true"></i> Needs WebGPU: desktop Chrome / Edge, or Safari 26+</li>
+        <li><i class="fas fa-fw fa-lock" aria-hidden="true"></i> Runs locally; Wikipedia and other tools are called directly from your browser</li>
+      </ul>
+      <a class="playground-card__button" href="{{ base_path }}/website-agent/">
+        Try it <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+</div>
+
+<p class="playground-note">
+  Model by Liquid AI, used under the
+  <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B-ONNX/blob/main/LICENSE" target="_blank" rel="noopener">LFM Open License v1.0</a>.
+  Source: <a href="https://github.com/erfanshayegani/website-agent" target="_blank" rel="noopener">github.com/erfanshayegani/website-agent</a>.
+</p>

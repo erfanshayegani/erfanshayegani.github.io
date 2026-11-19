@@ -1,0 +1,19 @@
+{% include base_path %}
+{% assign words = post.content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: site.words_per_minute %}
+{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+
+<details class="blog-item">
+  <summary class="blog-item__summary">
+    <span class="blog-item__title">{{ post.title }}</span>
+    <span class="blog-item__meta">
+      <i class="fas fa-fw fa-calendar" aria-hidden="true"></i><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      <span class="blog-item__sep" aria-hidden="true">·</span>
+      <i class="fas fa-fw fa-clock" aria-hidden="true"></i>{{ minutes }} min read
+    </span>
+  </summary>
+  <div class="blog-item__body">
+    {% if post.excerpt %}{{ post.excerpt | markdownify }}{% endif %}
+    <a class="blog-item__link" href="{{ base_path }}{{ post.url }}">Read the full post <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</details>

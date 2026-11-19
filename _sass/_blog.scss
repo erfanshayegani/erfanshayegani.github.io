@@ -1,0 +1,84 @@
+/* ==========================================================================
+   BLOG LIST (/blog/) — collapsible post titles
+   ========================================================================== */
+
+.blog-item {
+  margin: 0;
+  padding: 0.7em 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.blog-item__summary {
+  display: block;
+  position: relative;
+  padding-left: 1.3em;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker { display: none; }
+
+  /* caret */
+  &:before {
+    content: "\25B8"; /* ▸ */
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    font-size: 0.95em;
+    color: $gray;
+    -webkit-transition: transform 0.15s ease-in-out;
+            transition: transform 0.15s ease-in-out;
+  }
+
+  &:hover .blog-item__title { color: $link-color; }
+}
+
+.blog-item[open] > .blog-item__summary:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.blog-item__title {
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.35;
+  -webkit-transition: color 0.15s ease-in-out;
+          transition: color 0.15s ease-in-out;
+}
+
+.blog-item__meta {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.72em;
+  color: $gray;
+
+  .fa-fw { margin-right: 0.2em; }
+}
+
+.blog-item__sep { margin: 0 0.45em; }
+
+.blog-item__body {
+  padding: 0.5em 0 0.2em 1.3em;
+  font-size: 0.85em;
+
+  p { margin: 0 0 0.5em; }
+}
+
+.blog-item__link {
+  font-size: 0.92em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* tighter year headings on the blog page */
+.archive .archive__subtitle + .blog-item,
+.archive .blog-item + .archive__subtitle {
+  margin-top: 0.6em;
+}
+
+html[data-theme="dark"] {
+  .blog-item { border-color: #33383e; }
+  .blog-item__summary:before,
+  .blog-item__meta { color: #9aa1a8; }
+  .blog-item__summary:hover .blog-item__title { color: #6cc3dc; }
+}
