@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Research Tree</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.3/confetti.browser.min.js"></script>
+<script src="data.js"></script>
+<style>
+:root{
+  --bg:#f6f4fc; --bg-glow:#e9e3ff; --fg:#1c1830; --muted:#5f5a7a; --line:rgba(40,20,90,.16);
+  --card:rgba(255,255,255,.94); --card-solid:#ffffff; --shadow:0 18px 50px rgba(40,20,90,.16);
+  --star:rgba(70,40,160,.35); --accent:#e0245e; --accent2:#7c3aed;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0912; --bg-glow:#1c1238; --fg:#efecff; --muted:#a29dbf; --line:rgba(255,255,255,.13);
+    --card:rgba(20,18,36,.92); --card-solid:#15132a; --shadow:0 18px 60px rgba(0,0,0,.55);
+    --star:rgba(255,255,255,.75); --accent:#ff4d7d; --accent2:#a06bff;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0912; --bg-glow:#1c1238; --fg:#efecff; --muted:#a29dbf; --line:rgba(255,255,255,.13);
+  --card:rgba(20,18,36,.92); --card-solid:#15132a; --shadow:0 18px 60px rgba(0,0,0,.55);
+  --star:rgba(255,255,255,.75); --accent:#ff4d7d; --accent2:#a06bff;
+}
+body[data-mood="angel"]{ --accent:#f5b301; --accent2:#22b8cf; }
+
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden}
+body{
+  background:var(--bg);
+  background-image:radial-gradient(1200px 700px at 50% 20%, var(--bg-glow), transparent 70%);
+  color:var(--fg); font-family:Inter,system-ui,sans-serif; transition:background .4s;
+}
+#stars{position:fixed;inset:0;pointer-events:none}
+svg#map{position:fixed;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+svg#map:active{cursor:grabbing}
+
+header{
+  position:fixed; top:0; left:0; right:0; padding:18px 22px; display:flex; gap:16px;
+  align-items:flex-start; justify-content:space-between; pointer-events:none; z-index:5;
+}
+header > *{pointer-events:auto}
+.brand h1{margin:0;font:700 22px/1.15 "Space Grotesk",sans-serif;letter-spacing:-.01em}
+.brand h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand p{margin:4px 0 0;color:var(--muted);font-size:13px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+button{
+  font:500 13px Inter,sans-serif; color:var(--fg); background:var(--card); border:1px solid var(--line);
+  border-radius:12px; padding:8px 12px; cursor:pointer; transition:transform .15s, border-color .2s;
+  box-shadow:0 2px 10px rgba(0,0,0,.06);
+}
+button:hover{transform:translateY(-1px);border-color:var(--accent)}
+button.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent}
+
+#hint{
+  position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:4;white-space:nowrap;
+  font:500 14px "Space Grotesk",sans-serif;color:var(--muted);pointer-events:none;
+  animation:bob 2.2s ease-in-out infinite;transition:opacity .5s;
+}
+@keyframes bob{50%{transform:translate(-50%,-6px)}}
+
+#panel{
+  position:fixed; top:84px; right:18px; bottom:24px; width:380px; z-index:6;
+  background:var(--card); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--line); border-radius:20px; box-shadow:var(--shadow);
+  padding:22px 22px 18px; overflow:auto;
+  transform:translateX(calc(100% + 40px)); transition:transform .45s cubic-bezier(.2,.9,.25,1.15);
+}
+#panel.open{transform:none}
+#panel .close{position:absolute;top:12px;right:12px;width:32px;height:32px;padding:0;border-radius:10px;font-size:16px}
+.p-cat{display:inline-flex;gap:6px;align-items:center;font:600 12px "Space Grotesk",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--c)}
+#panel h2{font:700 21px/1.25 "Space Grotesk",sans-serif;margin:10px 34px 12px 0;letter-spacing:-.01em}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.badge{font-size:12px;border-radius:99px;padding:4px 10px;border:1px solid var(--line);color:var(--muted)}
+.badge.venue{color:var(--fg);border-color:color-mix(in srgb,var(--c) 55%,transparent);background:color-mix(in srgb,var(--c) 14%,transparent)}
+.badge.hot{color:#fff;border:0;background:linear-gradient(135deg,#ff7a18,#ff3d77)}
+#panel p{line-height:1.6;font-size:14.5px;margin:0 0 12px}
+#panel .people{color:var(--muted);font-size:13.5px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.links a{font-size:13px;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:6px 10px;transition:border-color .2s, background .2s}
+.links a:hover{border-color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)}
+.conn h4{font:600 12px "Space Grotesk",sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12.5px;padding:5px 10px;border-radius:99px;cursor:pointer;border:1px solid color-mix(in srgb,var(--c) 60%,transparent);background:color-mix(in srgb,var(--c) 12%,transparent)}
+.chip:hover{background:color-mix(in srgb,var(--c) 26%,transparent)}
+.mood-line{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-style:italic}
+
+#tip{
+  position:fixed;z-index:7;pointer-events:none;max-width:280px;padding:8px 11px;border-radius:10px;
+  background:var(--card-solid);border:1px solid var(--line);box-shadow:var(--shadow);font-size:12.5px;line-height:1.4;
+  opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;
+}
+#tip.on{opacity:1;transform:none}
+#tip small{color:var(--muted)}
+
+/* ---- tree ---- */
+.edge{fill:none;stroke:color-mix(in srgb,var(--c) 60%,var(--bg));stroke-width:2.2;stroke-linecap:round}
+.edge.root-edge{stroke-width:2.6}
+.branch{fill:none;stroke:color-mix(in srgb,var(--c) 55%,var(--bg));stroke-width:1.8;stroke-linecap:round}
+.branch.on{stroke:var(--c);stroke-width:2.6}
+
+.node{cursor:pointer}
+.cat .core{fill:color-mix(in srgb,var(--c) 22%,var(--card-solid));stroke:var(--c);stroke-width:2.2}
+.cat:hover .core{filter:drop-shadow(0 0 12px var(--c))}
+.cat .halo{fill:none;stroke:var(--c);stroke-width:1.5;stroke-dasharray:4 7;opacity:0;transition:opacity .3s;transform-box:fill-box;transform-origin:center}
+.cat.open .halo{opacity:.8;animation:spin 14s linear infinite}
+.cat.hint .halo{opacity:1;stroke:var(--accent);animation:spin 3s linear infinite, pulse 1s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{stroke-width:4}}
+.cat .emoji{font-size:26px;text-anchor:middle;dominant-baseline:central}
+.cat .lbl{font:600 14px "Space Grotesk",sans-serif;fill:var(--fg);text-anchor:middle}
+.cat .cnt circle{fill:var(--c)}
+.cat .cnt text{font:700 10.5px Inter,sans-serif;fill:#fff;text-anchor:middle;dominant-baseline:central}
+.cat .tog circle{fill:var(--card-solid);stroke:var(--c);stroke-width:1.6}
+.cat .tog text{font:700 13px Inter,sans-serif;fill:var(--fg);text-anchor:middle;dominant-baseline:central}
+
+.leaf rect{fill:color-mix(in srgb,var(--c) 14%,var(--card-solid));stroke:color-mix(in srgb,var(--c) 65%,transparent);stroke-width:1.3;transition:stroke-width .2s, opacity .3s}
+.leaf:hover rect{stroke-width:2.4;filter:drop-shadow(0 0 8px color-mix(in srgb,var(--c) 55%,transparent))}
+.leaf.selected rect{stroke:var(--c);stroke-width:3;filter:drop-shadow(0 0 12px var(--c))}
+.leaf.related rect{stroke:var(--accent);stroke-width:2.4;stroke-dasharray:5 3}
+.leaf text{font:500 13.5px "Space Grotesk",sans-serif;fill:var(--fg);dominant-baseline:central}
+.leaf .dot{fill:var(--c)}
+.leaf .star{fill:#ff9f1c;font-size:13px}
+.leaf .inner{transition:opacity .3s}
+.leaf.dim .inner{opacity:.5}
+
+.root .ring{fill:none;stroke:url(#rootGrad);stroke-width:4}
+.root .orbit{fill:none;stroke:var(--line);stroke-width:1;stroke-dasharray:2 6}
+.root .sat{animation:spin 9s linear infinite;transform-origin:0 0}
+.root .sat text{font-size:22px;text-anchor:middle;dominant-baseline:central}
+.root .name{font:700 17px "Space Grotesk",sans-serif;fill:var(--fg);text-anchor:middle}
+.root .sub{font:500 12px Inter,sans-serif;fill:var(--muted);text-anchor:middle}
+.root .fallback{font-size:42px;text-anchor:middle;dominant-baseline:central}
+.root:hover .ring{stroke-width:6}
+
+@media (max-width:760px){
+  header{padding:12px 14px;flex-direction:column;gap:10px}
+  .brand h1{font-size:18px}
+  .tools{justify-content:flex-start}
+  button{padding:7px 10px;font-size:12px}
+  #panel{top:auto;left:10px;right:10px;bottom:10px;width:auto;max-height:58vh;transform:translateY(calc(100% + 30px))}
+}
+@media (prefers-reduced-motion: reduce){ *{animation:none!important} }
+</style>
+</head>
+<body data-mood="devil">
+<canvas id="stars"></canvas>
+<svg id="map" aria-label="Tree of Erfan Shayegani's research"></svg>
+
+<header>
+  <div class="brand">
+    <h1><span>Erfan's Research Tree</span> 😈</h1>
+  </div>
+  <div class="tools">
+    <button class="primary" id="explode">🌳 Expand all</button>
+    <button id="collapse">🍂 Collapse</button>
+    <button id="fitbtn">⤢ Fit</button>
+    <button onclick="location.href='radial.html'">🪐 Radial view</button>
+  </div>
+</header>
+
+<div id="hint">👆 click a topic to branch it out</div>
+<aside id="panel" aria-live="polite"><button class="close" id="closePanel" aria-label="Close">✕</button><div id="panelBody"></div></aside>
+<div id="tip"></div>
+
+<script>
+/* ---------- geometry ---------- */
+const CAT_Y = 230, BUS_Y = 150, ROOT_BOTTOM = 102, CAT_R = 34;
+const ITEM_Y0 = CAT_Y + 104, ROW = 46, PILL_H = 32, COL_GAP = 34, INDENT = 20;
+const catBottom = CAT_Y + 66;           // below the category label
+const open = new Set();
+let selected = null, mood = "devil";
+
+/* ---------- measure text once ---------- */
+function measureAll(){
+  const s = d3.select("body").append("svg").attr("width",0).attr("height",0).style("position","absolute");
+  const lt = s.append("text").attr("class","m").style("font",'500 13.5px "Space Grotesk",sans-serif');
+  const ct = s.append("text").style("font",'600 14px "Space Grotesk",sans-serif');
+  CATS.forEach(c => {
+    ct.text(c.label); c.labelW = ct.node().getComputedTextLength() || c.label.length*8;
+    c.items.forEach(it => {
+      lt.text(it.label); const tw = lt.node().getComputedTextLength() || it.label.length*7.6;
+      it.w = (it.logo ? 32 : 22) + tw + (it.hot ? 26 : 14);
+    });
+  });
+  s.remove();
+}
+
+/* ---------- layout ---------- */
+function layout(){
+  const cols = CATS.map(c => {
+    const half = Math.max(56, c.labelW/2 + 10);
+    const right = open.has(c.id) ? Math.max(half, INDENT + 12 + Math.max(...c.items.map(i => i.w))) : half;
+    return { c, left: half, right };
+  });
+  const total = cols.reduce((a, k) => a + k.left + k.right, 0) + COL_GAP*(cols.length-1);
+  let x = -total/2;
+  cols.forEach(k => {
+    k.c.x = x + k.left; k.c.y = CAT_Y;
+    k.c.items.forEach((it, i) => { it.x = k.c.x + INDENT; it.y = ITEM_Y0 + i*ROW; });
+    x += k.left + k.right + COL_GAP;
+  });
+  // keep Publications centred under the root
+  const shift = -CATS.find(c => c.id === "pubs").x;
+  CATS.forEach(c => { c.x += shift; c.items.forEach(it => { it.x += shift; }); });
+  const maxRows = Math.max(0, ...CATS.filter(c => open.has(c.id)).map(c => c.items.length));
+  return { x0: -total/2 + shift, x1: total/2 + shift, y0: -70, y1: maxRows ? ITEM_Y0 + (maxRows-1)*ROW + PILL_H/2 : catBottom };
+}
+
+/* ---------- paths ---------- */
+function rootEdge(c){
+  const x0 = 0, x1 = c.x, y0 = ROOT_BOTTOM, y1 = CAT_Y - CAT_R - 4;
+  const s = x1 >= x0 ? 1 : -1, r = Math.min(16, Math.abs(x1-x0)/2);
+  return `M${x0},${y0}V${BUS_Y-r}Q${x0},${BUS_Y} ${x0+s*r},${BUS_Y}H${x1-s*r}Q${x1},${BUS_Y} ${x1},${BUS_Y+r}V${y1}`;
+}
+function branch(it){
+  const sx = it.cat.x, r = 10;
+  return `M${sx},${catBottom}V${it.y-r}Q${sx},${it.y} ${sx+r},${it.y}H${it.x}`;
+}
+
+/* ---------- svg scaffolding ---------- */
+const svg = d3.select("#map");
+const defs = svg.append("defs");
+const grad = defs.append("linearGradient").attr("id","rootGrad").attr("x1","0").attr("x2","1").attr("y1","0").attr("y2","1");
+grad.append("stop").attr("offset","0%").attr("stop-color","var(--accent)");
+grad.append("stop").attr("offset","100%").attr("stop-color","var(--accent2)");
+defs.append("clipPath").attr("id","rootClip").append("circle").attr("r",48);
+
+const world = svg.append("g");
+const gEdges = world.append("g"), gBranches = world.append("g"), gCats = world.append("g"), gLeaves = world.append("g"), gRoot = world.append("g");
+
+const zoom = d3.zoom().scaleExtent([0.25, 2.5])
+  .on("zoom", e => world.attr("transform", e.transform));
+svg.call(zoom).on("dblclick.zoom", null);
+svg.on("click", () => { if (selected) deselect(); });
+
+/* root */
+const rootG = gRoot.append("g").attr("class","node root");
+rootG.append("circle").attr("class","orbit").attr("r", 70);
+rootG.append("circle").attr("r", 50).attr("fill","var(--card-solid)");
+rootG.append("text").attr("class","fallback").text("😈");
+rootG.append("image").attr("href", IMG + "profile2.png").attr("x",-48).attr("y",-48).attr("width",96).attr("height",96)
+  .attr("preserveAspectRatio","xMidYMid slice").attr("clip-path","url(#rootClip)")
+  .on("error", function(){ d3.select(this).remove(); });
+rootG.append("circle").attr("class","ring").attr("r", 51);
+rootG.append("g").attr("class","sat").append("text").attr("id","satEmoji").attr("x", 70).text("😈");
+rootG.append("text").attr("class","name").attr("y", 74).text("Erfan Shayegani");
+rootG.append("text").attr("class","sub").attr("y", 93).text("CS PhD · UC Riverside");
+rootG.on("click", e => { e.stopPropagation(); killHint(); flipMood(); showAbout(); })
+  .on("mouseenter", e => showTip(e, `<b>Erfan Shayegani</b><br><small>Click to say hi and flip my mood</small>`))
+  .on("mousemove", moveTip).on("mouseleave", hideTip);
+
+/* ---------- render ---------- */
+const T = () => d3.transition().duration(550).ease(d3.easeCubicInOut);
+let bounds;
+
+function render(first){
+  bounds = layout();
+  const t = first ? d3.transition().duration(0) : T();
+
+  // root -> category edges
+  gEdges.selectAll("path").data(CATS, c => c.id).join(
+    enter => enter.append("path").attr("class","edge root-edge").attr("style", c => `--c:${c.color}`).attr("d", rootEdge)
+  ).transition(t).attr("d", rootEdge);
+
+  // categories
+  const cats = gCats.selectAll("g.cat").data(CATS, c => c.id).join(enter => {
+    const g = enter.append("g").attr("class","node cat").attr("style", c => `--c:${c.color}`)
+      .attr("transform", c => `translate(${c.x},${c.y})`);
+    g.append("circle").attr("class","halo").attr("r", CAT_R + 9);
+    g.append("circle").attr("class","core").attr("r", CAT_R);
+    g.append("text").attr("class","emoji").text(c => c.emoji);
+    g.append("text").attr("class","lbl").attr("y", CAT_R + 26).text(c => c.label);
+    const cnt = g.append("g").attr("class","cnt").attr("transform","translate(25,-25)");
+    cnt.append("circle").attr("r", 10); cnt.append("text").text(c => c.items.length);
+    const tog = g.append("g").attr("class","tog").attr("transform",`translate(0,${CAT_R})`);
+    tog.append("circle").attr("r", 9); tog.append("text").attr("y", -.5).text("+");
+    g.on("click", (e, c) => { e.stopPropagation(); killHint(); toggleCat(c); })
+     .on("mouseenter", (e, c) => showTip(e, `<b>${c.emoji} ${c.label}</b><br><small>${open.has(c.id) ? "Click to fold" : `Click to branch out ${c.items.length} items`}</small>`))
+     .on("mousemove", moveTip).on("mouseleave", hideTip);
+    return g;
+  });
+  cats.classed("open", c => open.has(c.id)).select(".tog text").text(c => open.has(c.id) ? "−" : "+");
+  cats.transition(t).attr("transform", c => `translate(${c.x},${c.y})`);
+
+  // items
+  const visible = CATS.filter(c => open.has(c.id)).flatMap(c => c.items);
+
+  gBranches.selectAll("path").data(visible, d => d.id).join(
+    enter => enter.append("path").attr("class","branch").attr("style", d => `--c:${d.cat.color}`).attr("d", branch)
+      .each(function(d){
+        const L = this.getTotalLength(), i = d.cat.items.indexOf(d);
+        d3.select(this).attr("stroke-dasharray", `${L} ${L}`).attr("stroke-dashoffset", L)
+          .transition().delay(first ? 0 : 120 + i*35).duration(first ? 0 : 450).ease(d3.easeCubicOut)
+          .attr("stroke-dashoffset", 0).on("end", function(){ d3.select(this).attr("stroke-dasharray", null); });
+      }),
+    update => update.call(u => u.transition(t).attr("d", branch)),
+    exit => exit.transition().duration(220).style("opacity", 0).remove()
+  );
+
+  gLeaves.selectAll("g.leaf").data(visible, d => d.id).join(
+    enter => {
+      const g = enter.append("g").attr("class","node leaf").attr("style", d => `--c:${d.cat.color}`)
+        .attr("transform", d => `translate(${d.x},${d.y})`);
+      const inner = g.append("g").attr("class","inner");
+      inner.each(function(d){ drawPill(d3.select(this), d); });
+      inner.attr("opacity", 0).attr("transform","translate(-12,0)")
+        .transition().delay(d => first ? 0 : 160 + d.cat.items.indexOf(d)*35).duration(first ? 0 : 420).ease(d3.easeCubicOut)
+        .attr("opacity", 1).attr("transform", null);
+      g.on("click", (e, d) => { e.stopPropagation(); select(d.id); })
+       .on("mouseenter", (e, d) => showTip(e, `<b>${d.title}</b><br><small>${d.venue} · ${d.date}</small>`))
+       .on("mousemove", moveTip).on("mouseleave", hideTip);
+      return g;
+    },
+    update => update.call(u => u.transition(t).attr("transform", d => `translate(${d.x},${d.y})`)),
+    exit => exit.call(x => x.select(".inner").transition().duration(220).attr("opacity", 0).attr("transform","translate(0,-10)"))
+      .transition().duration(240).remove()
+  );
+  highlight();
+}
+
+function drawPill(g, it){
+  const w = it.w, lead = it.logo ? 32 : 22;
+  g.append("rect").attr("x", 0).attr("y", -PILL_H/2).attr("width", w).attr("height", PILL_H).attr("rx", PILL_H/2);
+  if (it.logo){
+    g.append("image").attr("href", logoURL(it.logo)).attr("x", 8).attr("y", -9).attr("width", 18).attr("height", 18)
+      .on("error", function(){ d3.select(this).remove(); g.append("circle").attr("class","dot").attr("cx", 14).attr("r", 4.5); });
+  } else g.append("circle").attr("class","dot").attr("cx", 12).attr("r", 4.5);
+  g.append("text").attr("x", lead).text(it.label);
+  if (it.hot) g.append("text").attr("class","star").attr("x", w - 19).attr("y", 1).text("★");
+}
+
+/* ---------- interaction ---------- */
+let hintGone = false;
+function killHint(){ if (!hintGone){ hintGone = true; const h = document.getElementById("hint"); h.style.opacity = 0; setTimeout(() => h.remove(), 600); } }
+
+function toggleCat(c, want){
+  const isOpen = open.has(c.id);
+  if (want === undefined) want = !isOpen;
+  if (want === isOpen) return;
+  if (want){ open.add(c.id); if (c.id === "awards") burstAt(c.x, c.y, ["#ffb400","#ffd166","#ffffff","#ff7a18"], 80); }
+  else { open.delete(c.id); if (selected && ITEMS.get(selected).cat === c) deselect(); }
+  render(); fit();
+}
+
+function select(id){
+  selected = id;
+  const it = ITEMS.get(id), c = it.cat;
+  const linksHtml = (it.links || []).map(([t,u]) =>
+    `<a href="${u.startsWith("IMG:") ? IMG + u.slice(4) : u}" target="_blank" rel="noopener">${t} ↗</a>`).join("");
+  const chips = it.rel.map(r => ITEMS.get(r)).filter(Boolean).map(o =>
+    `<span class="chip" data-id="${o.id}" style="--c:${o.cat.color}">${o.cat.emoji} ${o.label}</span>`).join("");
+  openPanel(`
+    <div class="p-cat" style="--c:${c.color}">${c.emoji} ${c.label}</div>
+    <h2>${it.title}</h2>
+    <div class="meta" style="--c:${c.color}">
+      <span class="badge venue">${it.venue}</span>
+      <span class="badge">${it.date}</span>
+      ${it.badge ? `<span class="badge hot">${it.hot ? "🔥 " : ""}${it.badge}</span>` : ""}
+    </div>
+    <p>${it.desc}</p>
+    ${it.people ? `<p class="people"><b>With</b> ${it.people}</p>` : ""}
+    ${linksHtml ? `<div class="links" style="--c:${c.color}">${linksHtml}</div>` : ""}
+    ${chips ? `<div class="conn"><h4>✨ Connected to</h4><div class="chips">${chips}</div></div>` : ""}
+  `);
+  highlight();
+  if (it.hot) burstAt(it.x + it.w/2, it.y, [c.color, "#ffffff", "#ff9f1c"], 40);
+}
+function deselect(){ selected = null; closePanel(); highlight(); }
+
+function highlight(){
+  const it = selected ? ITEMS.get(selected) : null;
+  const rel = new Set(it ? it.rel : []);
+  gLeaves.selectAll("g.leaf")
+    .classed("selected", d => d.id === selected)
+    .classed("related", d => rel.has(d.id))
+    .classed("dim", d => !!it && d.id !== selected && !rel.has(d.id));
+  gBranches.selectAll("path").classed("on", d => d.id === selected);
+  const hidden = new Set([...rel].map(r => ITEMS.get(r)).filter(o => !open.has(o.cat.id)).map(o => o.cat.id));
+  gCats.selectAll("g.cat").classed("hint", c => hidden.has(c.id));
+}
+
+/* panel */
+const panel = document.getElementById("panel"), panelBody = document.getElementById("panelBody");
+function openPanel(html){ panelBody.innerHTML = html; panel.classList.add("open"); panel.scrollTop = 0; }
+function closePanel(){ panel.classList.remove("open"); }
+document.getElementById("closePanel").onclick = e => { e.stopPropagation(); deselect(); };
+panel.addEventListener("click", e => {
+  e.stopPropagation();
+  const chip = e.target.closest(".chip"); if (!chip) return;
+  const it = ITEMS.get(chip.dataset.id);
+  if (!open.has(it.cat.id)) toggleCat(it.cat, true);
+  select(it.id);
+  setTimeout(() => reveal(it), 600);
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") deselect(); });
+
+/* about / mood */
+const MOODS = {
+  devil: { emoji:"😈", line:"Adversarial mode: I probe models from the attacker’s side, because exposing alignment gaps is the fastest path to safer, more robust systems. (Dopamine rush 🌊🧨)" },
+  angel: { emoji:"😇", line:"Good-guy mode: measuring and steering empathy in LLM chatbots, and building agents that stop to ask whether they should." },
+};
+function flipMood(){
+  mood = mood === "devil" ? "angel" : "devil";
+  document.body.dataset.mood = mood;
+  d3.select("#satEmoji").text(MOODS[mood].emoji);
+  document.querySelector(".brand h1").lastChild.textContent = " " + MOODS[mood].emoji;
+  emojiBurst(MOODS[mood].emoji);
+}
+function showAbout(){
+  selected = null; highlight();
+  openPanel(`
+    <div class="p-cat" style="--c:var(--accent)">${MOODS[mood].emoji} About</div>
+    <h2>Erfan Shayegani</h2>
+    <div class="meta" style="--c:var(--accent)"><span class="badge venue">5th-year CS PhD · UC Riverside</span></div>
+    <p>I work where generative AI meets trustworthiness: multimodal LLMs and AI agents such as computer-use agents, with a focus on alignment, robustness, safety, ethics, bias and security/privacy.</p>
+    <p class="mood-line">${MOODS[mood].line}</p>
+    <p class="people">Click my face again to flip my mood.</p>
+    <div class="links" style="--c:var(--accent)">${PROFILE.map(([t,u]) => `<a href="${u}" target="_blank" rel="noopener">${t} ↗</a>`).join("")}</div>
+  `);
+}
+
+/* tooltip */
+const tip = document.getElementById("tip");
+function showTip(e, html){ tip.innerHTML = html; tip.classList.add("on"); moveTip(e); }
+function moveTip(e){ tip.style.left = Math.min(e.clientX + 14, innerWidth - 300) + "px"; tip.style.top = (e.clientY + 16) + "px"; }
+function hideTip(){ tip.classList.remove("on"); }
+
+/* ---------- camera ---------- */
+function viewport(){
+  const W = innerWidth, H = innerHeight;
+  const side = panel.classList.contains("open") && W > 760 ? 400 : 0;
+  const top = W > 760 ? 96 : 150;
+  return { W, H, side, top, aw: W - side - 48, ah: H - top - 48 };
+}
+function fit(dur = 650){
+  const v = viewport(), b = bounds;
+  const bw = b.x1 - b.x0, bh = b.y1 - b.y0;
+  const k = Math.max(0.25, Math.min(1.1, v.aw / bw, v.ah / bh));   // fit the whole tree: width and height
+  const cx = (b.x0 + b.x1) / 2;
+  const tx = 24 + v.aw/2 - cx*k;
+  const ty = v.top + (v.ah - bh*k)/2 - b.y0*k;
+  const tr = d3.zoomIdentity.translate(tx, ty).scale(k);
+  (dur ? svg.transition().duration(dur).ease(d3.easeCubicInOut) : svg).call(zoom.transform, tr);
+}
+function reveal(it){
+  const t = d3.zoomTransform(svg.node()), v = viewport();
+  const sy = t.y + it.y * t.k, sx = t.x + (it.x + it.w/2) * t.k;
+  let dx = 0, dy = 0;
+  if (sy > v.H - 60 || sy < v.top + 20) dy = (v.top + v.ah*0.45) - sy;
+  if (sx > v.W - v.side - 30 || sx < 30) dx = (24 + v.aw/2) - sx;
+  if (dx || dy) svg.transition().duration(500).call(zoom.translateBy, dx / t.k, dy / t.k);
+}
+
+/* ---------- buttons ---------- */
+document.getElementById("explode").onclick = () => {
+  killHint(); CATS.forEach(c => open.add(c.id)); render(); fit();
+  if (window.confetti) confetti({ particleCount:110, spread:110, startVelocity:36, origin:{ y:.35 }, colors:CATS.map(c => c.color) });
+};
+document.getElementById("collapse").onclick = () => { open.clear(); deselect(); render(); fit(); };
+document.getElementById("fitbtn").onclick = () => fit();
+/* zoom limits: can't zoom out much past "everything expanded", and can't pan far away */
+function fullBounds(){
+  const saved = new Set(open);
+  CATS.forEach(c => open.add(c.id)); const b = layout();
+  open.clear(); saved.forEach(id => open.add(id)); layout();
+  return b;
+}
+function updateLimits(){
+  const b = fullBounds(), W = innerWidth, H = innerHeight, top = W > 760 ? 96 : 150;
+  const aw = W - 48, ah = H - top - 48, bw = b.x1 - b.x0, bh = b.y1 - b.y0;
+  const kAll = Math.min(1.1, aw / bw, ah / bh);
+  zoom.scaleExtent([kAll * 0.9, 2.5]);
+  const m = 220;
+  zoom.translateExtent([[b.x0 - m, b.y0 - m - 80], [b.x1 + m, b.y1 + m]]);
+}
+addEventListener("resize", () => { updateLimits(); fit(0); });
+
+/* ---------- fun ---------- */
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function screenFrac(x, y){ const t = d3.zoomTransform(svg.node()); return { x:(t.x + x*t.k)/innerWidth, y:(t.y + y*t.k)/innerHeight }; }
+function burstAt(x, y, colors, count){
+  if (!window.confetti || reduceMotion) return;
+  confetti({ particleCount:count, spread:70, startVelocity:26, scalar:.8, origin:screenFrac(x, y), colors });
+}
+function emojiBurst(ch){
+  if (!window.confetti || reduceMotion) return;
+  try {
+    const shape = confetti.shapeFromText({ text:ch, scalar:2.4 });
+    confetti({ shapes:[shape], scalar:2.4, particleCount:24, spread:100, startVelocity:28, origin:screenFrac(0, 0), flat:true });
+  } catch(e){ confetti({ particleCount:60, spread:90, origin:screenFrac(0, 0) }); }
+}
+
+/* ---------- boot ---------- */
+Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1500))]).then(() => {
+  measureAll(); render(true); updateLimits(); fit(0);
+});
+</script>
+<script src="backgrounds.js"></script>
+</body>
+</html>

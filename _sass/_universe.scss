@@ -1,0 +1,22 @@
+/* ==========================================================================
+   UNIVERSE (/universe/)
+   Full-width interactive visualization, embedded from assets/universe/.
+   ========================================================================== */
+
+.universe {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.universe__frame {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 70px);
+  border: 0;
+}
+
+/* The page is the visualization: no footer under it. */
+.universe ~ .page__footer {
+  display: none;
+}

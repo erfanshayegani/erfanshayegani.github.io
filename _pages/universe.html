@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Universe"
+permalink: /universe/
+excerpt: "An interactive map of my research: publications, internships, talks, awards and more."
+---
+
+{% include base_path %}
+
+<!-- The visualization lives in assets/universe/ (tree.html + radial.html share data.js and
+     backgrounds.js). It is embedded in an iframe so its full-screen styles stay isolated from
+     the site, and it follows the site's light/dark toggle. -->
+<div class="universe">
+  <iframe class="universe__frame" src="{{ base_path }}/assets/universe/tree.html"
+          title="Erfan Shayegani's research universe (interactive)" loading="eager"></iframe>
+</div>
+
+<script>
+  // Fill the viewport below the masthead.
+  (function () {
+    var frame = document.querySelector('.universe__frame');
+    function size() {
+      var top = frame.getBoundingClientRect().top + window.scrollY;
+      frame.style.height = Math.max(480, window.innerHeight - top) + 'px';
+    }
+    size();
+    window.addEventListener('resize', size);
+    window.addEventListener('load', size);
+  })();
+</script>
