@@ -13,6 +13,9 @@
   // Colour tokens per background + mode (stars uses the pages' own light/dark tokens).
   const tokens = {
     "paper-light": "--bg:#f6f1e7;--bg-glow:#fffaf0;--fg:#2a2420;--muted:#6d645a;--card:rgba(255,253,248,.95);--card-solid:#fffdf8;--line:rgba(60,40,20,.16);--accent:#d6336c;--accent2:#6c4ccf;--shadow:0 18px 50px rgba(60,40,20,.16);",
+    // Embedded in the website: same colours as the site (light #fff, dark #15171a from _sass/_dark-theme.scss)
+    "paper-light-site": "--bg:#ffffff;--bg-glow:transparent;--fg:#222831;--muted:#6b7178;--card:rgba(255,255,255,.96);--card-solid:#ffffff;--line:rgba(0,0,0,.12);--accent:#d6336c;--accent2:#6c4ccf;--shadow:0 18px 50px rgba(0,0,0,.12);",
+    "paper-dark-site":  "--bg:#15171a;--bg-glow:transparent;--fg:#d4d7db;--muted:#9aa1a8;--card:rgba(30,33,37,.96);--card-solid:#1e2125;--line:#33383e;--accent:#ff6b8b;--accent2:#b39cff;--shadow:0 18px 50px rgba(0,0,0,.5);",
     "paper-dark":  "--bg:#1c1b18;--bg-glow:transparent;--fg:#efe8dc;--muted:#b3a996;--card:rgba(38,36,32,.94);--card-solid:#26241f;--line:rgba(255,240,220,.14);--accent:#ff6b8b;--accent2:#b39cff;--shadow:0 18px 50px rgba(0,0,0,.5);",
   };
 
@@ -53,8 +56,8 @@
       still: true,
       init(){}, frame(){
         const dark = mode === "dark";
-        ctx.fillStyle = dark ? "#1c1b18" : "#f6f1e7"; ctx.fillRect(0, 0, W, H);
-        ctx.fillStyle = dark ? "rgba(255,235,200,.10)" : "rgba(90,70,40,.16)";
+        ctx.fillStyle = cssVar("--bg") || (dark ? "#1c1b18" : "#f6f1e7"); ctx.fillRect(0, 0, W, H);
+        ctx.fillStyle = siteRoot ? (dark ? "rgba(255,255,255,.07)" : "rgba(0,0,0,.09)") : (dark ? "rgba(255,235,200,.10)" : "rgba(90,70,40,.16)");
         for (let x = 11; x < W; x += 22) for (let y = 11; y < H; y += 22){ ctx.beginPath(); ctx.arc(x, y, 1, 0, 6.283); ctx.fill(); }
       }
     },
@@ -125,7 +128,7 @@
     cur = bg.id; mode = m === "dark" ? "dark" : "light";
     const root = document.documentElement;
     root.dataset.theme = mode;
-    root.dataset.bg = `${cur}-${mode}`;
+    root.dataset.bg = `${cur}-${mode}` + (siteRoot && cur === "paper" ? "-site" : "");
     modeBtn.textContent = mode === "dark" ? "☀️ Light" : "🌙 Dark";
     try { localStorage.setItem("ru-bg-v2", cur); if (!siteRoot) localStorage.setItem("ru-mode-v2", mode); } catch(e){}
     renderMenu();
