@@ -225,11 +225,16 @@ News ⬇️ (Scroll down)
 
 Education
 ------
-<img src="images/ucr.png" width="25" height="25"><span style="font-weight:400;font-size:14px"> Ph.D. in Computer Science at University of California, Riverside (Sep2022-Present)</span>
-
-<img src="images/sharif.svg" width="25" height="25"><span style="font-weight:400;font-size:14px"> B.Sc. in Electrical Engineering at Sharif University of Technology (2017-2022)</span>
-
-<span style="font-weight:400;font-size:13px">Ranked 68th among 150,000 participants in Iran Nationwide University Entrance Exam (Konkur)</span>
+<div class="edu">
+  <div class="edu__item">
+    <img src="{{ base_path }}/images/ucr.png" alt="UC Riverside logo" width="36" height="36">
+    <div><strong>Ph.D. in Computer Science</strong><span>University of California, Riverside · Sep 2022 – Present</span></div>
+  </div>
+  <div class="edu__item">
+    <img class="edu__sharif" src="{{ base_path }}/images/sharif.svg" alt="Sharif University of Technology logo" width="36" height="36">
+    <div><strong>B.Sc. in Electrical Engineering</strong><span>Sharif University of Technology · 2017 – 2022</span><em>Ranked 68th among 150,000 participants in Iran's nationwide university entrance exam (Konkur)</em></div>
+  </div>
+</div>
 
 <!-- <p style="font-weight:400;font-size:13px">Ranked 68th among 150,000 participants in Iran Nationwide University Entrance Exam (Konkur)</p> -->
 

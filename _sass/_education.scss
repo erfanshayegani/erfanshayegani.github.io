@@ -1,0 +1,39 @@
+/* ==========================================================================
+   EDUCATION (homepage): logo + degree cards
+   ========================================================================== */
+
+.edu {
+  display: grid;
+  gap: 0.7em;
+  margin: 0.6em 0;
+}
+.edu__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8em;
+  font-size: 0.88em;
+
+  img {
+    flex: none;
+    margin-top: 0.15em;
+    object-fit: contain;
+  }
+  div {
+    display: grid;
+    line-height: 1.45;
+  }
+  span,
+  em {
+    color: $gray;
+  }
+  em {
+    font-size: 0.9em;
+  }
+}
+
+html[data-theme="dark"] {
+  .edu__item span,
+  .edu__item em {
+    color: #9aa1a8;
+  }
+}
