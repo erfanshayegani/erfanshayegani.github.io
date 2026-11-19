@@ -49,10 +49,16 @@ $dark-link-hover    : #9ad8ea;
   -webkit-transition: $global-transition;
           transition: $global-transition;
 
+  /* light mode shows a blue moon */
+  color: #5b6cf0;
+  border-color: rgba(91, 108, 240, 0.35);
+  background: rgba(91, 108, 240, 0.08);
+
   &:hover,
   &:focus-visible {
-    color: $masthead-link-color-hover;
-    border-color: $primary-color;
+    color: #4453e0;
+    border-color: #5b6cf0;
+    box-shadow: 0 0 0 3px rgba(91, 108, 240, 0.18), 0 0 12px rgba(91, 108, 240, 0.35);
   }
 
   .theme-toggle__icon--sun { display: none; }
@@ -60,13 +66,16 @@ $dark-link-hover    : #9ad8ea;
 }
 
 html[data-theme="dark"] .theme-toggle {
-  border-color: $dark-border;
-  color: $dark-text;
+  /* dark mode shows a yellow sun */
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.4);
+  background: rgba(251, 191, 36, 0.1);
 
   &:hover,
   &:focus-visible {
-    color: #ffd166;
-    border-color: $dark-text-muted;
+    color: #fcd34d;
+    border-color: #fbbf24;
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.18), 0 0 14px rgba(251, 191, 36, 0.45);
   }
 
   .theme-toggle__icon--sun { display: inline; }
