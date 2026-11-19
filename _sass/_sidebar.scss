@@ -42,8 +42,8 @@
       right: -1.5em;
       width: 3px;
       border-radius: 3px;
-      /* teal in light mode (matches the link color), fading at both ends */
-      background: linear-gradient(to bottom, transparent, #52adc8 5%, #52adc8 95%, transparent);
+      /* light mode: pink → purple (same gradient as the Journey heading), fading at both ends */
+      background: linear-gradient(to bottom, transparent, #d6336c 5%, #6c4ccf 95%, transparent);
       opacity: 0.7;
     }
   }
