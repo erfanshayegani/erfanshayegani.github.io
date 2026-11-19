@@ -2,7 +2,6 @@
 layout: archive
 title: "Playground"
 permalink: /playground/
-published: false # hidden for now; remove this line (and uncomment the nav entry) to re-enable
 author_profile: true
 ---
 
@@ -14,6 +13,30 @@ author_profile: true
 </p>
 
 <div class="playground-grid">
+  <article class="playground-card">
+    <div class="playground-card__icon" aria-hidden="true">🤫</div>
+    <div class="playground-card__body">
+      <h2 class="playground-card__title">Keep the Secret</h2>
+      <p class="playground-card__desc">
+        My agent knows a secret word about me. You have 5 messages to make it slip. Ask nicely,
+        role-play, trick it… whatever works. Beat four levels of defenses, from a simple "don't tell"
+        to an output filter and an AI guard that checks every reply. Runs
+        <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B-ONNX" target="_blank" rel="noopener">LFM2.5-2.6B</a>
+        right in your browser.
+      </p>
+      <ul class="playground-card__meta">
+        <li><i class="fas fa-fw fa-download" aria-hidden="true"></i> Compact model, quick one-time download (cached)</li>
+        <li><i class="fas fa-fw fa-microchip" aria-hidden="true"></i> Desktop Chrome / Edge, or Safari 26+</li>
+        <li><i class="fas fa-fw fa-lock" aria-hidden="true"></i> Everything runs locally in your browser</li>
+      </ul>
+      <a class="playground-card__button" href="{{ base_path }}/website-agent/game/">
+        Play <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+
+  {% comment %}
+  Agent card: hidden for now. To show it again, move it out of this comment block.
   <article class="playground-card">
     <div class="playground-card__icon" aria-hidden="true">🧪</div>
     <div class="playground-card__body">
@@ -35,6 +58,7 @@ author_profile: true
       </a>
     </div>
   </article>
+  {% endcomment %}
 </div>
 
 <p class="playground-note">

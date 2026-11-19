@@ -18,10 +18,8 @@ main:
   - title: "Blog Posts ✍️"
     url: /blog/
 
-  # Hidden for now. To re-enable: uncomment these two lines and remove
-  # `published: false` from _pages/playground.html.
-  # - title: "Playground 🧪"
-  #   url: /playground/
+  - title: "Playground 🧪"
+    url: /playground/
 
   - title: "Journey 🚀"
     url: /journey/
