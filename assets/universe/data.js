@@ -134,7 +134,7 @@ const CATS = [
    { id:"talk-cohere-nov26", label:"Cohere · Nov ’26 · Grounding", logo:"cohere.png", year:2026, date:"Nov 2026",
      title:"Visual Grounding Safety", venue:"Cohere",
      desc:"A talk on the visual grounding safety gap in VLMs.",
-     links:[["YouTube","https://www.youtube.com/watch?v=IYSE0NAaPig"]] },
+     links:[["YouTube","https://youtu.be/IYSE0NAaPig?t=60"]] },
  ]},
  { id:"awards", label:"Awards & Honors", emoji:"🏆", color:"#ffb400", items:[
    { id:"aw-konkur", label:"Konkur Rank 68 / 150k", year:2017, date:"2017",
