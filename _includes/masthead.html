@@ -42,6 +42,30 @@
       try { localStorage.setItem('theme', next); } catch (e) {}
       sync();
     }
+    /* nudge the toggle so it sits exactly above the sidebar's vertical divider line */
+    function alignToDivider() {
+      btn.style.transform = '';
+      var siteTitle = document.querySelector('.masthead__menu-item--lg a');
+      if (siteTitle) siteTitle.style.transform = '';
+      var sb = document.querySelector('.sidebar');
+      if (!sb) return;
+      var line = getComputedStyle(sb, '::before');
+      if (line.content === 'none' || line.position !== 'absolute') return; /* no line on narrow screens */
+      var s = sb.getBoundingClientRect();
+      var lineCenter = s.right - parseFloat(line.right) - parseFloat(line.width) / 2;
+      var b = btn.getBoundingClientRect();
+      btn.style.transform = 'translateX(' + (lineCenter - (b.left + b.width / 2) + 1) + 'px)'; /* +1px looks better centered */
+      /* center the site title above the profile photo */
+      var name = document.querySelector('.masthead__menu-item--lg a');
+      var img = document.querySelector('.author__avatar img');
+      if (name && img) {
+        name.style.transform = '';
+        var n = name.getBoundingClientRect(), i = img.getBoundingClientRect();
+        name.style.transform = 'translateX(' + ((i.left + i.width / 2) - (n.left + n.width / 2) + 5) + 'px)'; /* +5px looks better centered */
+      }
+    }
+    window.addEventListener('load', alignToDivider);
+    window.addEventListener('resize', alignToDivider);
     btn.addEventListener('click', toggle);
     btn.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }

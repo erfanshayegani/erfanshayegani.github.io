@@ -254,3 +254,19 @@
     }
   }
 }
+
+/* Colorful sidebar icons (brand colors) */
+.author__urls {
+  .fa-linkedin       { color: #0a66c2; transition: color 0.2s ease-in-out; } /* LinkedIn blue; no background animation (stops the white square sliding in) */
+  .fa-graduation-cap { color: #4285f4; } /* Google blue */
+  .x-logo            { color: #000; }    /* X is black (white in dark mode) */
+}
+
+html[data-theme="dark"] .author__urls {
+  /* white "in" like the real logo: fill the cut-out letters with a white square behind the icon */
+  .fa-linkedin {
+    color: #0a66c2;
+    background: linear-gradient(#fff, #fff) no-repeat center / 0.6em 0.6em;
+  }
+  .x-logo      { color: #fff; }
+}
