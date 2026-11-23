@@ -1,6 +1,10 @@
 {% include base_path %}
 
-<div class="masthead">
+<div class="masthead masthead--photos">
+  <!-- EXPERIMENT: Seasons photos slowly cross-fading behind the top bar (see _sass/_masthead-photos.scss) -->
+  <div class="masthead__photos" aria-hidden="true"
+       data-base="{{ base_path }}/images/seasons/"
+       data-photos="2023-09,2023-10,2023-11,2023-12,2024-02,2024-03,2025-01,2025-10,2026-05,2026-11"></div>
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
@@ -29,6 +33,34 @@
   </div>
 </div>
 <script>
+  /* EXPERIMENT: cross-fade the Seasons photos behind the top bar, one every 6s */
+  (function () {
+    var box = document.querySelector('.masthead__photos');
+    if (!box) return;
+    var base = box.getAttribute('data-base');
+    var names = box.getAttribute('data-photos').split(',');
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var layers = names.map(function (n, k) {
+      var d = document.createElement('div');
+      d.className = 'masthead__photo' + (k === 0 ? ' is-active' : '');
+      if (k === 0) d.style.backgroundImage = 'url(' + base + n + '.jpg)';
+      box.appendChild(d);
+      return d;
+    });
+    var i = 0;
+    function load(k) {
+      if (!layers[k].style.backgroundImage) layers[k].style.backgroundImage = 'url(' + base + names[k] + '.jpg)';
+    }
+    window.addEventListener('load', function () { load(1); });
+    function next() {
+      var j = (i + 1) % layers.length;
+      load(j); load((j + 1) % layers.length); /* also fetch the one after, so it's ready */
+      layers[i].classList.remove('is-active');
+      layers[j].classList.add('is-active');
+      i = j;
+    }
+    if (!still) setInterval(next, 6000);
+  })();
   (function () {
     var root = document.documentElement;
     var btn = document.getElementById('theme-toggle');

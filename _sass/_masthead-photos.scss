@@ -1,0 +1,84 @@
+/* ==========================================================================
+   EXPERIMENT: Seasons photos cross-fading behind the top bar.
+   To undo: remove "masthead--photos" + the .masthead__photos div/script in
+   _includes/masthead.html and the import in assets/css/main.scss.
+   ========================================================================== */
+
+.masthead--photos {
+  border-bottom-color: transparent;
+
+  .masthead__photos {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden; /* clip here, not on .masthead, so the mobile menu dropdown can still open */
+    pointer-events: none;
+
+    /* dark tint so the menu stays readable */
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10, 12, 16, 0.55), rgba(10, 12, 16, 0.4));
+    }
+  }
+
+  .masthead__photo {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center 25%; /* 25% above the middle: the sky and clouds */
+    opacity: 0;
+    transition: opacity 2.5s ease;
+
+    &.is-active { opacity: 1; }
+  }
+
+  .masthead__inner-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  .greedy-nav {
+    background: transparent;
+  }
+
+  .greedy-nav .visible-links a,
+  .greedy-nav .visible-links a:visited {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+}
+
+html[data-theme="dark"] .masthead--photos .greedy-nav {
+  background: transparent;
+}
+
+/* theme button on top of the photos: a frosted-glass disc tinted by the photo behind it */
+.masthead--photos .theme-toggle {
+  background: rgba(255, 255, 255, 0.16);
+  /* frosted glass: blurs the photo behind it, so it takes on the photo's colors */
+  -webkit-backdrop-filter: blur(10px) saturate(1.4);
+          backdrop-filter: blur(10px) saturate(1.4);
+  border-width: 1.5px;
+}
+
+/* light mode: brighter pink → purple moon so it reads on the dark disc */
+html:not([data-theme="dark"]) .masthead--photos .theme-toggle {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(244, 114, 182, 0.75);
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.45);
+
+  .theme-toggle__icon--moon {
+    background: linear-gradient(135deg, #f472b6, #a78bfa);
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+}
+
+/* dark mode: orange sun, slightly brighter border */
+html[data-theme="dark"] .masthead--photos .theme-toggle {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(251, 146, 60, 0.85);
+  box-shadow: 0 0 14px rgba(251, 146, 60, 0.5);
+}
