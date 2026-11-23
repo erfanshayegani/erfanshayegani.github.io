@@ -1,0 +1,43 @@
+/* ==========================================================================
+   EXPERIMENT: blurred Seasons photos behind the whole site.
+   To undo: remove the .site-bg div in _includes/masthead.html and the
+   import in assets/css/main.scss.
+   ========================================================================== */
+
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+
+  /* tint over the photos so text stays easy to read */
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.78);
+  }
+}
+
+.site-bg__photo {
+  position: absolute;
+  inset: -60px; /* bigger than the screen so the blur has no soft edges */
+  background-size: cover;
+  background-position: center;
+  filter: blur(28px) saturate(1.2);
+  opacity: 0;
+  transition: opacity 2.5s ease;
+
+  &.is-active { opacity: 1; }
+}
+
+/* let the photos show through the page */
+body:has(.site-bg) {
+  background: transparent;
+}
+
+html[data-theme="dark"] {
+  .site-bg::after { background: rgba(14, 16, 20, 0.8); }
+  body:has(.site-bg) { background: transparent; }
+}
