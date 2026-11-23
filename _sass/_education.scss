@@ -37,3 +37,56 @@ html[data-theme="dark"] {
     color: #9aa1a8;
   }
 }
+
+/* Font Awesome logo used in place of an image (e.g. Apple in Experience) */
+.edu__logo {
+  flex: none;
+  width: 36px;
+  margin-top: 0.15em;
+  font-size: 34px;
+  line-height: 36px;
+  text-align: center;
+}
+
+/* Experience: the short explanation line is itself the toggle (small ▸ before it) */
+.edu__more {
+  summary {
+    position: relative;
+    padding-left: 1em;
+    cursor: pointer;
+    list-style: none;
+    &::-webkit-details-marker { display: none; }
+    &::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      top: 0.05em;
+      color: $gray;
+      font-size: 0.85em;
+      transition: transform 0.2s ease;
+    }
+  }
+  &[open] summary::before { transform: rotate(90deg); }
+
+  p {
+    margin: 0.3em 0 0 1em;
+    line-height: 1.5;
+  }
+}
+
+html[data-theme="dark"] .edu__more summary::before {
+  color: #9aa1a8;
+}
+
+/* Experience logos: smaller than Education's 36px */
+.edu--exp {
+  .edu__item img {
+    width: 22px;
+    height: 22px;
+  }
+  .edu__logo {
+    width: 22px;
+    font-size: 21px;
+    line-height: 22px;
+  }
+}

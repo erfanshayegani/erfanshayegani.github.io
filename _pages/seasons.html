@@ -1,0 +1,103 @@
+---
+layout: default
+title: "Seasons"
+permalink: /seasons/
+excerpt: "Same window, different seasons: one view from campus, photographed across my PhD."
+---
+
+{% include base_path %}
+
+<!-- Same view from campus, photographed across seasons/years. Photos in images/seasons/ (oldest first). -->
+<section class="seasons" aria-labelledby="seasons-title">
+  <header class="seasons__intro">
+    <h1 id="seasons-title">Same window, different seasons 🌄</h1>
+    <p>Throughout my PhD, I kept coming back to the same view of the mountain on campus. The scene never moves, yet it is never the same: late-summer evenings, grey autumn skies, golden light, rain, spring clouds, quiet dusks.</p>
+    <p>It reminds me that life works the same way. Every season brings a different light to the same place.</p>
+  </header>
+
+  <div class="seasons__grid">
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2023-09.jpg" data-label="Sep 2023">
+      <img src="{{ base_path }}/images/seasons/2023-09.jpg" alt="Late summer: warm evening light on the mountain under wispy clouds" loading="lazy">
+      <span>Sep 2023</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2023-10.jpg" data-label="Oct 2023">
+      <img src="{{ base_path }}/images/seasons/2023-10.jpg" alt="October: big billowing clouds over the mountain" loading="lazy">
+      <span>Oct 2023</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2023-11.jpg" data-label="Nov 2023">
+      <img src="{{ base_path }}/images/seasons/2023-11.jpg" alt="Overcast autumn: grey sky over the dry, brown mountain" loading="lazy">
+      <span>Nov 2023</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2023-12.jpg" data-label="Dec 2023">
+      <img src="{{ base_path }}/images/seasons/2023-12.jpg" alt="Golden hour: the mountain glowing orange under storm clouds" loading="lazy">
+      <span>Dec 2023</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2024-02.jpg" data-label="Feb 2024">
+      <img src="{{ base_path }}/images/seasons/2024-02.jpg" alt="Rainy day: clouds resting on a green mountain" loading="lazy">
+      <span>Feb 2024</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2024-03.jpg" data-label="Mar 2024">
+      <img src="{{ base_path }}/images/seasons/2024-03.jpg" alt="Spring: blue sky and white clouds over the green mountain" loading="lazy">
+      <span>Mar 2024</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2025-01.jpg" data-label="Jan 2025">
+      <img src="{{ base_path }}/images/seasons/2025-01.jpg" alt="Winter evening: hazy sky and soft pink-gold light on the mountain" loading="lazy">
+      <span>Jan 2025</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2025-10.jpg" data-label="Oct 2025">
+      <img src="{{ base_path }}/images/seasons/2025-10.jpg" alt="Autumn sunset: the mountain glowing red-orange under storm clouds" loading="lazy">
+      <span>Oct 2025</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2026-05.jpg" data-label="May 2026">
+      <img src="{{ base_path }}/images/seasons/2026-05.jpg" alt="Late spring: a perfectly clear blue sky over the sun-dried mountain" loading="lazy">
+      <span>May 2026</span>
+    </button>
+    <button class="seasons__tile" type="button" data-full="{{ base_path }}/images/seasons/2026-11.jpg" data-label="Nov 2026">
+      <img src="{{ base_path }}/images/seasons/2026-11.jpg" alt="Dusk: soft blue light over the darkened mountain" loading="lazy">
+      <span>Nov 2026</span>
+    </button>
+  </div>
+</section>
+
+<!-- Click a photo to see it large; arrows / keys to move, Esc to close. -->
+<div class="seasons__lightbox" hidden>
+  <button class="seasons__close" type="button" aria-label="Close">×</button>
+  <button class="seasons__nav seasons__nav--prev" type="button" aria-label="Previous photo">‹</button>
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="seasons__nav seasons__nav--next" type="button" aria-label="Next photo">›</button>
+</div>
+
+<script>
+  (function () {
+    var tiles = document.querySelectorAll('.seasons__tile');
+    var box = document.querySelector('.seasons__lightbox');
+    var img = box.querySelector('img');
+    var cap = box.querySelector('figcaption');
+    var i = 0;
+    function show(n) {
+      i = (n + tiles.length) % tiles.length;
+      var t = tiles[i];
+      img.src = t.getAttribute('data-full');
+      img.alt = t.querySelector('img').alt;
+      cap.textContent = t.getAttribute('data-label') + ' \u00b7 ' + t.querySelector('img').alt;
+    }
+    function open(n) { show(n); box.hidden = false; document.body.style.overflow = 'hidden'; box.querySelector('.seasons__close').focus(); }
+    function close() { box.hidden = true; document.body.style.overflow = ''; tiles[i].focus(); }
+    for (var k = 0; k < tiles.length; k++) {
+      (function (k) { tiles[k].addEventListener('click', function () { open(k); }); })(k);
+    }
+    box.querySelector('.seasons__close').addEventListener('click', close);
+    box.querySelector('.seasons__nav--prev').addEventListener('click', function () { show(i - 1); });
+    box.querySelector('.seasons__nav--next').addEventListener('click', function () { show(i + 1); });
+    box.addEventListener('click', function (e) { if (e.target === box) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (box.hidden) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(i - 1);
+      else if (e.key === 'ArrowRight') show(i + 1);
+    });
+  })();
+</script>

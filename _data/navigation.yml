@@ -23,6 +23,9 @@ main:
 
   - title: "Journey 🚀"
     url: /journey/
+
+  - title: "Seasons 🌄"
+    url: /seasons/
     
   # - title: "CV"
   #   url: /cv/
