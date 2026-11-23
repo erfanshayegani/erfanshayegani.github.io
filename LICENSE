@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
-Copyright (c) 2016 Michael Rose
+Copyright (c) 2016 Michael Rose (Minimal Mistakes Jekyll Theme)
+Portions Copyright (c) 2023-2026 Erfan Shayegani (https://erfanshayegani.github.io)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +20,41 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+--------------------------------------------------------------------------------
+What this license covers
+--------------------------------------------------------------------------------
+
+The MIT License above applies to the website's code and design: layouts,
+includes, styles, scripts, and Erfan Shayegani's additions and modifications
+(for example the Journey visualization in assets/universe/, the Seasons page,
+the photo backgrounds, and the custom homepage sections).
+
+If you reuse any of this code, the copyright notice above, including
+"Portions Copyright (c) 2023-2026 Erfan Shayegani", must be kept in your copy.
+
+
+--------------------------------------------------------------------------------
+Personal content: NOT covered by this license
+--------------------------------------------------------------------------------
+
+The following are Copyright (c) 2023-2026 Erfan Shayegani, all rights reserved,
+and may not be reused without permission:
+
+  - the text of the pages and posts (biography, research descriptions, news,
+    blog posts, etc.)
+  - photos and images, including images/seasons/ and the profile pictures
+  - the CV/resume and other documents in files/
+  - the data describing Erfan Shayegani's work (e.g. assets/universe/data.js)
+
+Third-party logos and trademarks belong to their respective owners.
+
+
+--------------------------------------------------------------------------------
+A friendly request
+--------------------------------------------------------------------------------
+
+If you use this website as a template, please credit it visibly, for example
+with "Website design by Erfan Shayegani" linking to
+https://erfanshayegani.github.io in your footer. Thank you!

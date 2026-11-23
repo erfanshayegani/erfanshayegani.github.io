@@ -1,13 +1,10 @@
-## Continue the Claude Code session
+## License & credit
 
-The session that built the Universe/Journey visualization (`assets/universe/`) can be resumed from this folder:
+The code and design of this site are released under the [MIT License](LICENSE): © 2016 Michael Rose (Minimal Mistakes) and © 2023–2026 [Erfan Shayegani](https://erfanshayegani.github.io) for the custom additions (Journey visualization, Seasons page, photo backgrounds, homepage sections, styling). If you reuse the code, keep the copyright notice in `LICENSE`.
 
-```
-cd ~/Documents/GitHub/erfanshayegani.github.io
-claude --resume bc55e23b-9a01-4988-b574-cccde2af4d4c
-```
+**Personal content is not covered:** the text, photos (including `images/seasons/`), profile pictures, CV and other documents are © Erfan Shayegani, all rights reserved.
 
-(`claude --resume` with no ID lists recent sessions for this folder; `claude --continue` reopens the latest one.)
+**Using this as a template?** Please credit it visibly, e.g. *"Website design by [Erfan Shayegani](https://erfanshayegani.github.io)"* in your footer. 🙏
 
 A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
 
